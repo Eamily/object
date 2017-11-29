@@ -1,0 +1,315 @@
+@charset "utf-8";
+body {
+	background-color: #F0F0F0;
+}
+
+.bg-white {
+	background-color: #FFFFFF;
+}
+
+.cart-linetitle {
+	border-bottom: 1px solid #ececec;
+	border-top: 1px solid #ececec;
+}
+
+.cart-allsele {
+	width: 5.5%;
+	margin: 10px;
+}
+
+.cart-solosele {
+	width: 5.5%;
+	margin-left: 10px;
+	padding: 8% 0px;
+}
+
+.cart-ziying {
+	margin: 12px 0px;
+	vertical-align: middle;
+	font-size: 13px;
+}
+
+.cart-tu {
+	width: 24%;
+	display: inline-block;
+}
+
+.cart-goods-xq {
+	width: 91.5%;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.cart-info {
+	width: 74%;
+	display: inline-block;
+	font-size: 12px;
+	vertical-align: top;
+	padding-top: 5px;
+}
+
+.cart-info a {
+	color: #333333;
+}
+
+.cart-info-title {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.cart-ma {
+	color: #999999;
+	margin-top: 3px;
+	height: 18px;
+	line-height: 18px;
+}
+
+.cart-shui {
+	color: #999999;
+}
+
+.cart-info-deta {
+	width: 60%;
+}
+
+.cart-num {
+	width: 38%;
+}
+
+.change {
+	border: 1px solid #aaaaaa;
+	border-radius: 4px;
+	margin-right: 3%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.box-jian {
+	width: 25%;
+	border-right: 1px solid #AAAAAA;
+}
+
+.num {
+	width: 48%;
+}
+
+.box-plus {
+	width: 25%;
+	border-left: 1px solid #AAAAAA;
+}
+
+.cart-delete {
+	width: 16%;
+	margin-right: 3%;
+	margin-top: 10%;
+}
+
+.active-youhui {}
+
+.allprice {}
+
+.zong {
+	padding: 2% 2%;
+	font-size: 12px;
+}
+
+.textright {
+	text-align: right;
+}
+
+.zong-price {
+	width: 16%;
+}
+
+
+/*最底部*/
+
+.cart-bottom {
+	width: 100%;
+	background-color: #FFFFFF;
+	position: fixed;
+	bottom: 0px;
+	border-top: 1px solid #cccccc;
+}
+
+.cart-account {
+	color: #FFFFFF;
+	padding: 13px 25px;
+	font-size: 15px;
+}
+
+.cart-account-bg {
+	background-color: #c1c1c1;
+	/*background-color: #e31436;*/
+}
+
+.cart-bottom-select {
+	font-size: 12px;
+	padding: 16px 0px;
+}
+
+.cart-bottom-price {
+	font-size: 13px;
+	padding-top: 5px;
+	padding-right: 10px;
+}
+
+.bottom-tax {
+	font-size: 12px;
+	color: #999999;
+}
+
+.red-txt {
+	color: #e31436;
+}
+
+/*账号*/
+
+.m-acount {
+	line-height: 45px;
+	padding-left: 10px;
+	color: #666;
+	background-color: #fff;
+	border-bottom: 2px solid #f0f0f0;
+	font-size: 14px;
+}
+
+.u-content {
+	float: right;
+	padding-right: 21px;
+	color: #333;
+	width: 70%;
+	text-align: right;
+}
+
+.bg-white a {
+	color: #333333;
+}
+
+
+/*个人中心*/
+
+.user-bg {
+	width: 100%;
+	height: 141px;
+	background-image: url(../img/cart/profile-bg.png);
+}
+
+.user-xiang {
+	padding-top: 23px;
+	padding-bottom: 5px;
+}
+
+.u-arrow {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background-image: url(../img/cart/user-to.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% auto;
+	vertical-align: middle;
+}
+
+.user-count {
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+.my-order {
+	margin-left: 15px;
+	overflow: hidden;
+	padding: 10px 0px;
+}
+
+.boder-bot {
+	border-bottom: solid 1px #f0f0f0;
+}
+
+.u-hit {
+	color: #999999;
+}
+
+.user-dai {
+	height: 61px;
+	border-top: solid 1px #f0f0f0;
+}
+
+.u-link-item {
+	height: 48px;
+	line-height: 81px;
+}
+
+.m-order-items,
+.m-order-item {
+	position: relative;
+	float: left;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80px auto;
+	font-size: 13px;
+}
+
+.m-order-items {
+	height: 60px;
+	margin-bottom: 10px;
+	background-color: #fff;
+}
+
+.m-order-all {
+	background-image: url(../img/cart/all.png);
+}
+
+.m-order-daifu {
+	background-image: url(../img/cart/daifu.png);
+}
+
+.m-order-daifa {
+	background-image: url(../img/cart/daifa.png);
+}
+
+.m-order-daishou {
+	background-image: url(../img/cart/daishou.png);
+}
+
+.user-greybar {
+	width: 100%;
+	height: 10px;
+	background-color: #F0F0F0;
+}
+
+.max-bottom {
+	padding: 0px 0px 20px;
+}
+
+.bg-white .list-line a {
+	color: #848689
+}
+
+.nick-name {
+	display: inline-block;
+	max-width: 70px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.account-bar {
+	border-bottom: solid 1px #f0f0f0;
+}
+/*空的购物车*/
+
+.btn-more{
+	background-color: #E31436;
+	width: 30%;
+	padding: 5px 0px;
+	border-radius: 4px;
+	margin-left: 35%;
+	margin-top: 10px;
+}
+.btn-more a{
+	color: #FFFFFF;
+}

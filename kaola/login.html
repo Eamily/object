@@ -1,0 +1,349 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>网易考拉海购-登录</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/login-register.css" />
+    <style>
+    .state1 {
+        color: #aaa;
+    }
+
+    .state2 {
+        color: #000;
+    }
+
+    .state3 {
+        color: red;
+    }
+
+    .state4 {
+        color: green;
+    }
+
+    .number-in {
+        height: 50px;
+    }
+
+    .number-in span {
+        font-size: 13px;
+    }
+    </style>
+</head>
+
+<body>
+    <!--选择登录方式的页面-->
+    <div id="select-login" class="center heightmax">
+        <div class="loginlogo"></div>
+        <form action="" method="post">
+            <div class="loginway center phone-enter">
+                <div class="login-ico"><i class="loginicon login-phone"></i></div>
+                <div>手机号登陆</div>
+            </div>
+            <div class="loginway center email-enter">
+                <div class="login-ico"><i class="loginicon login-email"></i></div>
+                <div>邮箱登录</div>
+            </div>
+            <div class="loginway registerkl center">
+                <!--<a href="register.html">-->
+                <div>手机号一键注册</div>
+                <!--</a>-->
+            </div>
+            <div class="another-login center">
+                <div class="boder-line"></div>
+                <div class="another-text">
+                    或用以下方式登陆录
+                </div>
+                <div class="boder-line"></div>
+            </div>
+            <div class="login-icons">
+                <a href="#">
+                    <div><i class="loginicon login-weixin"></i></div>
+                </a>
+                <a href="#">
+                    <div><i class="loginicon login-weibo"></i></div>
+                </a>
+                <a href="#">
+                    <div><i class="loginicon login-qq"></i></div>
+                </a>
+                <a href="#">
+                    <div><i class="loginicon login-zhifubao"></i></div>
+                </a>
+            </div>
+        </form>
+    </div>
+    <!--手机号登陆页面-->
+    <div id="phonenumber-login" class="enter nosee">
+        <form action="" method="post">
+            <div class="login-top">
+                <span class="arrow-left"><img width="100%" src="img/index/arrow-left.png"/></span>
+                <span class="anotherway">其他登录方式</span>
+                <span class="numberway">手机号登录</span>
+            </div>
+            <div class="loginlogo ph-logo"></div>
+            <div class="login-input-num">
+                <div class="number-in">
+                    <input name="tel" datatype="" class=" number-in-boder" type="tel" placeholder="输入手机号" value="" required/>
+                    <span class='state1'>请输入手机号</span>
+                    <br/>
+                    <br/>
+                </div>
+            </div>
+            <div class="number-check">
+                <div class="check-slider">
+                    <img width="100%" src="img/index/slider.png" />
+                </div>
+                <div class="check-tip center">
+                    按住滑块，拖动完成上方拼图
+                </div>
+            </div>
+            <div class="login-input-num relative">
+                <div class="number-in-check">
+                    <input class="number-in-boder" type="tel" name="" id="" placeholder="请输入短信验证码" value="" />
+                </div>
+                <div class="number-code center fr">
+                    获取验证码
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="login-input-num">
+                <!--<a href="index.html">-->
+                <div id="phone-btn" class="number-in login-login center submit">
+                    登录
+                </div>
+                <!--</a>-->
+            </div>
+            <div class="problem-tip">
+                <div class="fl">
+                    <a href="#">遇到问题？</a>
+                </div>
+                <div class="fr">
+                    <a href="#">使用密码验证登录</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </form>
+    </div>
+    <!--邮箱登录-->
+    <div id="email-login" class="enter nosee">
+        <form action="" method="post">
+            <div class="login-top">
+                <span class="arrow-left"><img width="100%" src="img/index/arrow-left.png"/></span>
+                <span class="anotherway">其他登录方式</span>
+                <span class="emailway">邮箱登录</span>
+            </div>
+            <div class="loginlogo ph-logo"></div>
+            <div class="login-input-num">
+                <div class="number-in">
+                    <input id="doc-vld-email-2" class="number-in-boder" type="email" name="email" id="" placeholder="网易邮箱账号" value="" />
+                    <span class='state1'>请输入网易邮箱账号</span>
+                    <br/>
+                    <br/>
+                </div>
+            </div>
+            <div class="login-input-num">
+                <div class="number-in relative">
+                    <input class="number-in-boder" type="password" name="password" id="" placeholder="密码" value="" />
+                    <span class='state1'>请输入密码</span>
+                    <br/>
+                    <br/>
+                    <div class="eye-mima">
+                        <i class="ursicon urs-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="login-input-num">
+                <!--<a href="index.html">-->
+                <div id="email-btn" class="number-in login-login center submit">
+                    登录
+                </div>
+                <!--</a>-->
+            </div>
+            <div class="problem-tip">
+                <div class="fl">
+                    <a href="#">
+                        <label class="ten-day"><i class="ursicon urs-yes"></i></label>
+                        <input id="un-login" class="nosee" type="checkbox" name="" id="" value="" checked /> 10天免登录
+                    </a>
+                </div>
+                <div class="fr">
+                    <a href="#">忘记密码?</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </form>
+    </div>
+    <!--手机号一键注册-->
+    <div id="phone-register" class="enter nosee">
+        <form action="" method="post">
+            <div class="login-top">
+                <span class="arrow-left"><img width="100%" src="img/index/arrow-left.png"/></span>
+                <span class="anotherway">其他登录方式</span>
+                <span class="registerway">手机号一键注册</span>
+            </div>
+            <div class="loginlogo ph-logo"></div>
+            <div class="login-input-num">
+                <div class="number-in">
+                    <input class="number-in-boder" type="tel" name="tel" required id="" placeholder="输入手机号" value="" />
+                    <span class='state1'>请输入手机号</span>
+                    <br/>
+                    <br/>
+                </div>
+            </div>
+            <div class="number-check">
+                <div class="check-slider">
+                    <img width="100%" src="img/index/slider.png" />
+                </div>
+                <div class="check-tip center">
+                    按住滑块，拖动完成上方拼图
+                </div>
+            </div>
+            <div class="login-input-num relative">
+                <div class="number-in-check">
+                    <input class="number-in-boder" type="tel" name="" id="" placeholder="请输入短信验证码" value="" />
+                </div>
+                <div class="number-code center fr">
+                    获取验证码
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="login-input-num">
+                <div class="number-in relative">
+                    <input class="number-in-boder" type="password" name="password" id="" placeholder="请输入密码" value="" />
+                    <span class='state1'>请输入密码</span>
+                    <br/>
+                    <br/>
+                    <div class="eye-mima">
+                        <i class="ursicon urs-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="login-input-num">
+                <!--<a href="index.html">-->
+                <div id="register-btn" class="number-in login-login center submit">
+                    注册
+                </div>
+                <!--</a>-->
+            </div>
+            <div class="agree-list">
+                我同意
+                <a href="//reg.163.com/agreement_wap.shtml?20160825">《服务条款》</a> 和
+                <a href="//reg.163.com/agreement_game_wap.shtml?20160825">《网络游戏用户隐私保护和个人信息利用政策》</a>
+            </div>
+        </form>
+    </div>
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    var ok1 = false;
+    var ok2 = false;
+    var ok3 = false;
+
+    function yanzheng() {
+        // 验证 手机号
+        $('input[name="tel"]').focus(function() {
+            $(this).next().text('请输入11位手机号').removeClass('state1').removeClass('state4').addClass('state3');
+        }).blur(function() {
+            if ($(this).val().search(/^1[3|4|5|7|8][0-9]{9}/) != -1) {
+                $(this).next().text('输入成功').removeClass('state1').addClass('state4');
+                ok1 = true;
+            } else {
+                $(this).next().text('请输入11位手机号').removeClass('state1').addClass('state3');
+                ok1 = false;
+            }
+        });
+        //验证邮箱
+        $('input[name="email"]').focus(function() {
+            $(this).next().text('请输入正确的EMAIL格式').removeClass('state1').removeClass('state4').addClass('state3');
+        }).blur(function() {
+            if ($(this).val().search(/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/) == -1) {
+                $(this).next().text('请输入正确的EMAIL格式').removeClass('state1').addClass('state3');
+                ok3 = false;
+            } else {
+                $(this).next().text('输入成功').removeClass('state1').addClass('state4');
+                ok3 = true;
+            }
+        });
+        //验证密码
+        $('input[name="password"]').focus(function() {
+            $(this).next().text('密码应该为6-20位之间').removeClass('state1').removeClass('state4').addClass('state3');
+        }).blur(function() {
+            if ($(this).val().length >= 6 && $(this).val().length <= 20 && $(this).val() != '') {
+                $(this).next().text('输入成功').removeClass('state1').addClass('state4');
+                ok2 = true;
+            } else {
+                $(this).next().text('密码应该为6-20位之间').removeClass('state1').addClass('state3');
+                ok2 = false;
+            }
+        });
+    };
+    yanzheng();
+
+    $(document).ready(function() {
+        // post请求
+        // 注册
+        $("#register-btn").click(function(event) {
+            /* 先验证再序列化 */
+            yanzheng();
+            if (ok1 && ok2) {
+            	window.location.href = "index.html";
+                var data = $("#phone-register form").serialize();
+                $.post('/users/mobile/login/', data, function(data, textStatus, xhr) {
+                    /*optional stuff to do after success */
+                });
+            }
+        });
+        // 手机号登录
+        $("#phone-btn").click(function(event) {
+            /* Act on the event */
+            yanzheng();
+            if (ok1) {
+            	window.location.href = "index.html";
+                var data = $("#phonenumber-login form").serialize();
+                $.post('/users/mobile/login/', data, function(data, textStatus, xhr) {
+                    /*optional stuff to do after success */
+                });
+            }
+        });
+        // 邮箱登录
+        $("#email-btn").click(function(event) {
+            /* Act on the event */
+            yanzheng();
+            if (ok2 && ok3) {
+            	window.location.href = "index.html";
+                var data = $("#email-login form").serialize();
+                $.post('/users/mobile/login/', data, function(data, textStatus, xhr) {
+                    /*optional stuff to do after success */
+                });
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

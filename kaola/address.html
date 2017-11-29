@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>网易考拉海购-收货地址</title>
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="icon" type="image/png" href="assets/i/favicon.png">
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+		<link rel="stylesheet" href="assets/css/amazeui.min.css">
+		<link rel="stylesheet" href="assets/css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/newperson.css" />
+		<link rel="stylesheet" type="text/css" href="css/shoppingcart.css" />
+		<link rel="stylesheet" type="text/css" href="css/login-register.css" />
+		<link rel="stylesheet" type="text/css" href="css/address.css" />
+	</head>
+
+	<body>
+		<form class="bg-white">
+			<div id="" class="enter">
+				<div class="login-top">
+					<span id="goback" class="arrow-left"><img width="100%" src="img/index/arrow-left.png"/></span>
+					<span class="registerway geren">收货地址</span>
+				</div>
+			</div>
+			<div class="reciveBox">
+				<div class="ad-name clearfix">
+					<div class="fl">
+						<!--{{name}}-->
+						小姐姐
+					</div>
+					<div class="fr">
+						<!--{{tel}}-->
+						13423453423
+					</div>
+				</div>
+				<div class="ad-address">
+					<div class="">
+						<!--{{city}}{{street}}-->
+						山东省青岛市城阳区春阳路盈园国际中心
+					</div>
+					<div>
+						<input type="checkbox" name="" id="ad-check" value="{{isDefault}}" />
+						<span class="moren">默认地址</span>
+					</div>
+				</div>
+			</div>
+			<div class="login-bottom">
+				<span id="addnew" class="registerway new-address">新增收货地址</span>
+			</div>
+		</form>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/amazeui.min.js"></script>
+		<script src="js/template-web.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function goback() {
+				window.history.back();
+			}
+			$(document).ready(function() {
+				$("#addnew").click(function() {
+					window.location.href = "addaddress.html";
+				})
+				$("#goback").click(function () {
+					window.location.href = "index.html";
+				})
+			})
+		</script>
+	</body>
+
+</html>

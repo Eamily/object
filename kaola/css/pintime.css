@@ -1,0 +1,186 @@
+@charset "utf-8";
+#pt-nav{
+	position: fixed;
+	top: 0px;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #E5E5E5;
+}
+#pt-nav .swiper-slide {
+	width: auto;
+	height: auto;
+	margin: 0px 10px;
+	padding: 5px 0px;
+}
+
+#pt-nav .swiper-wrapper {
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 14px;
+}
+
+.pt-active {
+	color: #e31436;
+	border-bottom: 2px solid #e31436;
+}
+
+.pt-tu{
+	margin-top: 35px;
+}
+/*四小图*/
+
+.pt-littletu {
+	padding-bottom: 10px;
+}
+
+.pt-littletu img {
+	width: 24%;
+}
+
+
+/*灰条*/
+
+.pt-greybar {
+	height: 10px;
+	background-color: #f0f0f0;
+}
+
+
+/*商品*/
+
+.pt-zhuan {
+	margin: 15% 15%;
+}
+
+.pt-goods-info {
+	padding: 5px 10px 10px;
+}
+
+.pt-goods-title {
+	color: #333;
+	word-wrap: break-word;
+	word-break: break-all;
+	font-size: 16px;
+	margin-bottom: 12px;
+}
+
+.f-els-2 {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.pt-pin-goods .group-num:before {
+	content: "";
+	background: url(../img/pin/tuan.png) no-repeat;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin: 0px 3px 2px 0;
+	vertical-align: middle;
+	background-size: 100%;
+}
+
+.pt-pin-goods del {
+	text-decoration: line-through;
+	color: #999;
+	white-space: nowrap;
+	font-size: 12px;
+}
+
+.group-num {
+	color: #666666;
+	font-size: 12px;
+}
+
+.pt-pin-goods .group-price {
+	margin-right: 2px;
+	color: #e31436;
+	font-size: 12px;
+}
+.group-price strong{
+	font-size: 16px;
+}
+
+.pt-pin-goods .togroup {
+	display: inline-block;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 14px;
+	color: #fff;
+	padding: 0% 5%;
+	background: #e31436;
+}
+
+.pt-pin-goods .togroup:after {
+	content: "";
+	display: inline-block;
+	width: 6px;
+	height: 9px;
+	margin: 12px 0 0 10px;
+	background: url(../img/pin/togroup.png) no-repeat;
+	background-size: 100% 100%;
+}
+.pt-goods-price{
+	line-height: 34px;
+}
+/*最底部*/
+.pt-bottom{
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	line-height: 40px;
+	background-color: #FFFFFF;
+	border-top: 1px solid #E5E5E5;
+}
+
+.pt-pin-shop:before{
+	    content: "";
+    display: inline-block;
+    background: url(../img/pin/shop.png) no-repeat;
+    background-size: 100%;
+    width: 23px;
+    height: 21px;
+    vertical-align: text-bottom;
+    margin-right: 9px;
+}
+.pt-pin-shop{
+	color: #e31436;
+}
+.pt-bottom-t{
+	padding: 1% 10%;
+	border-right: 1px solid #E5E5E5;
+}
+.pt-pin-my:before{
+	    content: "";
+    display: inline-block;
+    background: url(../img/pin/my.png) no-repeat;
+    background-size: 100%;
+    width: 19px;
+    height: 21.5px;
+    vertical-align: text-bottom;
+    margin-right: 8px;
+}
+.pt-pin-my{
+	color: #666666;
+}
+/*返回顶部*/
+.gototop{
+	width: 36px;
+	height: 36px;
+	background-color: rgba(255,255,255,0.8);
+	color: rgba(0,0,0,0.9);
+	border: 0.5px solid rgba(0,0,0,0.8);
+}
+.gototop .up{
+	left: 12px;
+	border-top: 1px solid #666;
+	border-left: 1px solid #666;
+}
+.am-gotop{
+	margin-bottom: 50px;
+}
+.gototop-p{
+	top: -2px;
+}

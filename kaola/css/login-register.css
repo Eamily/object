@@ -1,0 +1,402 @@
+@charset "utf-8";
+
+/*选择登录方式页面*/
+
+.heightmax {
+	height: 100%;
+}
+
+.loginlogo {
+	background: url(../img/index/loginlogo.png) center 73px no-repeat;
+	background-size: 161px;
+	padding: 130px 0px 0px;
+}
+
+.loginway {
+	padding: 9px;
+	margin-bottom: 15px;
+	width: 300px;
+	border: 1px solid #333333;
+	font-size: 1.4rem;
+	border-radius: 3px;
+	position: relative;
+	left: 50%;
+	margin-left: -150px;
+}
+
+.loginway a {
+	color: #FFFFFF;
+}
+
+.loginicon {
+	background: url(../img/index/loginicon1.png) no-repeat;
+}
+
+.login-phone {
+	position: absolute;
+	background-position: 0px -44px;
+	width: 10px;
+	height: 13px;
+}
+
+.login-email {
+	position: absolute;
+	background-position: -23px -44px;
+	width: 14px;
+	height: 11px;
+}
+
+.login-ico {
+	width: 17px;
+	height: 13px;
+	padding: 2px 15px;
+}
+
+.loginway div,
+.another-login div {
+	display: inline-block;
+}
+
+.registerkl {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.another-login {
+	margin-top: 40px;
+	color: #999999;
+}
+
+.boder-line {
+	width: 50px;
+	border-top: 1px solid #EEEEEE;
+	padding-top: 4px;
+	margin: 0px 5px;
+}
+
+.another-text {
+	font-size: 1.2rem;
+}
+
+.login-weixin {
+	position: absolute;
+	background-position: -72px 0px;
+	width: 30px;
+	height: 30px;
+}
+
+.login-weibo {
+	position: absolute;
+	background-position: -36px 0px;
+	width: 30px;
+	height: 30px;
+}
+
+.login-qq {
+	position: absolute;
+	background-position: 0px 0px;
+	width: 30px;
+	height: 30px;
+}
+
+.login-zhifubao {
+	position: absolute;
+	background-position: -144px 0px;
+	width: 30px;
+	height: 30px;
+}
+
+.login-icons {
+	margin-left: -35px;
+}
+
+.login-icons div {
+	display: inline-block;
+	padding: 0px 35px;
+}
+
+
+/*手机号登录页面*/
+
+.login-top {
+	font-size: 1.2rem;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.login-top span {
+	display: inline-block;
+}
+
+.arrow-left {
+	width: 20px;
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+.arrow-left img {
+	margin-top: -3px;
+}
+
+.anotherway {
+	margin-left: -3px;
+}
+
+.numberway {
+	font-size: 1.8rem;
+	margin-left: 18%;
+	padding: 8px 0px;
+}
+
+.ph-logo {
+	margin-top: -45px;
+}
+
+.number-in-boder {
+	border: 0;
+	height: 44px;
+	width: 100%;
+	padding: 12px 40px 12px 10px;
+	line-height: 20px;
+	box-sizing: border-box;
+	font-size: 14px;
+	background-color: #f7f7f7;
+}
+
+.number-in {
+	width: 90%;
+	margin-left: 5%;
+}
+
+.number-check {
+	width: 83%;
+	margin-bottom: 15px;
+	margin-left: 5%;
+	border: 1px solid #cbcbcb;
+	border-radius: 15px;
+	background-color: #f9f9f9;
+}
+
+.number-check div {
+	display: inline-block;
+}
+
+.check-slider {
+	width: 20%;
+}
+
+.check-tip {
+	width: 78%;
+	font-size: 1.2rem;
+	color: #a8a8a8;
+}
+
+.number-check .check-slider img {
+	margin-top: -2px;
+}
+
+.login-input-num {
+	margin-bottom: 20px;
+}
+
+.login-login {
+	background-color: #000000;
+	color: #FFFFFF;
+	padding: 10px 0px;
+	font-size: 1.5rem;
+}
+
+.problem-tip {
+	font-size: 1.2rem;
+	width: 90%;
+	margin-left: 5%;
+}
+
+.problem-tip a {
+	color: #999999;
+}
+
+.number-in-check {
+	display: inline-block;
+	width: 60%;
+	margin-left: 5%;
+}
+
+.number-code {
+	font-size: 1.5rem;
+	display: inline-block;
+	border: 1px solid #cccccc;
+	padding: 8px 0px 9px;
+	margin-right: 5%;
+	width: 28%;
+}
+
+
+/*邮箱登录页面*/
+
+.emailway {
+	font-size: 1.8rem;
+	margin-left: 20%;
+	padding: 8px 0px;
+}
+
+.ten-day {
+	margin: 0px 0px -3px;
+	width: 15px;
+	height: 15px;
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	border-radius: 2px;
+}
+
+.ursicon {
+	background: url(../img/index/ursicon4.png) no-repeat;
+}
+
+.urs-yes {
+	position: absolute;
+	background-position: -1px -1px;
+	width: 14px;
+	height: 14px;
+}
+
+.urs-eye {
+	position: absolute;
+	background-position: 0px -52px;
+	width: 21px;
+	height: 9px;
+}
+
+.eye-mima {
+	position: absolute;
+	top: 20px;
+	right: 10%;
+}
+
+.urs-eyes {
+	position: absolute;
+	background-position: 0px -73px;
+	width: 21px;
+	height: 13px;
+}
+
+
+/*注册页面*/
+/*.account-name{
+	width: 51%;
+	margin-left: 7%;
+	border: 1px solid #d0d0d0;
+	border-radius: 4px;
+	padding:3%;
+	font-size: 1.4rem;
+}
+.account-name input,
+.verify input{
+	border: none;
+}
+.reg-box{
+	margin-top: 15%;
+}
+.account-way{
+	width: 32%;
+	border: 1px solid #d0d0d0;
+	border-radius: 4px;
+	padding:1.5% 3% 3.5%;
+	position: absolute;
+	top: 0px;
+	right: 7%;
+}
+.account-way input{
+	color: #333333;
+	font-weight: bold;
+	border: none;
+	width: 100%;
+}
+.sprite{
+	background: url(../img/index/sprite.png) no-repeat;
+}
+.reg-tr{
+	position: absolute;
+	background-position: -99px -21px;
+	width: 12px;
+	height: 8px;
+}
+.select-email{
+	position: absolute;
+	top: 20px;
+	right: 16px;
+}
+.account{
+	color: #999999;
+}
+.verify{
+	color: #999999;
+	width: 86%;
+	margin-left: 7%;
+	border: 1px solid #d0d0d0;
+	border-radius: 4px;
+	padding: 3%;
+	margin-top: 20px;
+	font-size: 1.4rem;
+}
+.flag-l{
+	background: url(../img/index/flags-l.png) no-repeat;
+}
+.flag-CN{
+	position: absolute;
+	width: 23px;
+	height: 18px;
+	background-position: 0px -3744px;
+}
+.flags{
+	position: absolute;
+	top: 16px;
+	right: 45px;
+}
+.word-verify{
+	color: #999999;
+	width: 86%;
+	margin-left: 7%;
+	border: 1px solid #d0d0d0;
+	border-radius: 20px;
+	padding:2% 3%;
+	margin-top: 20px;
+	font-size: 1.2rem;
+}
+.next-step{
+	margin-top: 15%;
+}
+.nextstep-box{
+	background-color: #b7272d;
+	color: #FFFFFF;
+	padding: 8px 0px;
+	font-size: 1rem;
+	width: 86%;
+	margin-left: 7%;
+	border-radius: 4px;
+}*/
+.agree-list{
+	width: 87%;
+	margin-left: 6%;
+	font-size: 1rem;
+	color: #848689;
+}
+.agree-list a{
+	color: #848689;
+}
+.registerway{
+	font-size: 1.8rem;
+	margin-left: 10%;
+	padding: 8px 0px;
+}
+
+/*验证*/
+.am-form input[type=tel],
+.am-form input[type=email],
+.am-form input[type=password]{
+	background-color: #f7f7f7;
+}
+.am-form input[type=tel]:focus,
+.am-form input[type=email]:focus,
+.am-form input[type=password]:focus{
+	background-color: #f7f7f7;
+}

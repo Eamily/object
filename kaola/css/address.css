@@ -1,0 +1,42 @@
+@charset "utf-8";
+.geren {
+	margin-left: 35%;
+}
+
+.login-top {
+	background-color: #ffffff;
+}
+
+.u-content input {
+	border: 0px;
+	text-align: right;
+}
+
+.login-bottom {
+	background-color: #e31436;
+	margin-top: 20px;
+	padding: 5px 0px;
+	color: #ffffff;
+}
+
+.save-geren {
+	margin-left: 45%;
+}
+
+.u-content select {
+	border: none;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	height: 40px;
+	padding: 0px 5px;
+}
+
+.new-address {
+	margin-left: 35%;
+}
+
+.greybar {
+	background-color: #F0F0F0;
+	height: 10px;
+}

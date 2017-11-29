@@ -1,0 +1,942 @@
+<!doctype html>
+<html class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>网易考拉海购</title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="assets/css/amazeui.min.css">
+		<link rel="stylesheet" href="assets/css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<style type="text/css">
+			.togr {
+				width: 22px;
+				position: absolute;
+				top: 7px;
+				right: 20px;
+			}
+			
+			.usercenter {
+				position: absolute;
+				top: -7px;
+				right: 7%;
+				width: 38px;
+				height: 22px;
+				border-radius: 3px;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--最顶部-->
+		<div id="topmax" class="topmax fixedtop">
+			<div class="cotainer relative">
+				<div class="searchbox">
+					<span class="am-icon-search"></span>
+					<span>奶粉</span>
+				</div>
+				<div class="login nosee">
+					<a href="login.html">登录</a>
+				</div>
+				<div class="usercenter">
+					<a href="usercenter.html">
+						<i class="togr"><img width="100%" src="img/new-zhuanx/grkl.png"/></i>
+					</a>
+				</div>
+				<div class="index-cart">
+					<a href="shoppingcart.html"><img width="100%" src="img/index/topcart.png" /></a>
+				</div>
+			</div>
+		</div>
+		<!--轮播图-->
+		<div data-am-widget="slider" class="am-slider am-slider-a1 banner" data-am-slider='{&quot;directionNav&quot;:false}'>
+			<ul class="am-slides">
+				<li>
+					<a href="details2.html"><img src="img/index/1.jpg"></a>
+				</li>
+				<li>
+					<a href="details2.html"><img src="img/index/2.jpg"></a>
+				</li>
+				<li>
+					<a href="details2.html"><img src="img/index/3.jpg"></a>
+				</li>
+				<li>
+					<a href="details2.html"><img src="img/index/4.jpg"></a>
+				</li>
+				<li>
+					<a href="details2.html"><img src="img/index/5.jpg"></a>
+				</li>
+				<li>
+					<a href="details2.html"><img src="img/index/6.jpg"></a>
+				</li>
+			</ul>
+		</div>
+		<!--四个小图标，导航-->
+		<div id="indexnav" class="am-g index-nav">
+			<div class="am-u-sm-3">
+				<a href="country.html"><img src="img/index/801.jpg" /> 每日上新
+				</a>
+			</div>
+			<div class="am-u-sm-3">
+				<a href="country.html"><img src="img/index/802.jpg" /> 国家馆
+				</a>
+			</div>
+			<div class="am-u-sm-3">
+				<a href="safe.html"><img src="img/index/803.jpg" /> 考拉保障
+				</a>
+			</div>
+			<div class="am-u-sm-3">
+				<a href="pin-team.html"><img src="img/index/804.jpg" /> 拼团
+				</a>
+			</div>
+		</div>
+		<!--新人-->
+		<div id="newperson" class="am-g">
+			<div class="am-u-sm-6">
+				<a href="newperson.html"><img src="img/index/3301.jpg" /></a>
+			</div>
+			<div class="am-u-sm-6">
+				<a href="newperson.html"><img src="img/index/3302.jpg" /></a>
+			</div>
+		</div>
+		<!--手机限时购-->
+		<div class="list-title">
+			<div class="clock-hour"><i class="sprites clock-o"></i></div>
+			<div>手机限时购</div>
+		</div>
+		<div class="countdown relative">
+			<a href="details2.html">
+				<img width="100%" src="img/index/3501.jpg" />
+				<div class="count-text center">
+					<div class="toend center">距本场结束还有<span id="countdown"></span></div>
+					<div class="enter-btn center">入场疯抢 &gt;</div>
+				</div>
+			</a>
+		</div>
+		<div class="am-g">
+			<div class="am-u-sm-4">
+				<a href="details1.html">
+					<div class="">
+						<img src="img/index/hourgou4.jpg" />
+					</div>
+					<div class="hourgou-info">
+						<div class="hourgou-name">
+							OZWEAR UGG内增高3cm水貂毛球配饰羊皮毛一体女士豆豆鞋
+						</div>
+						<div class="hourgou-price center">
+							<span>&yen;499</span>
+							<span>&yen;<del>998</del></span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="am-u-sm-4">
+				<a href="details1.html">
+					<div class="">
+						<img src="img/index/hourgou.jpg" />
+					</div>
+					<div class="hourgou-info">
+						<div class="hourgou-name">
+							ALBION奥尔滨 水乳套装 健康水330毫升+清新莹润渗透乳II号 200克
+						</div>
+						<div class="hourgou-price center">
+							<span>&yen;938</span>
+							<span>&yen;<del>1280</del></span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="am-u-sm-4">
+				<a href="details1.html">
+					<div class="">
+						<img src="img/index/hourgou6.jpg" />
+					</div>
+					<div class="hourgou-info">
+						<div class="hourgou-name">
+							Zac Posen EARTHA ICONIC系列 女士时尚优雅纯色链条包
+						</div>
+						<div class="hourgou-price center">
+							<span>&yen;1645</span>
+							<span>&yen;<del>2900</del></span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!--专题推荐-->
+		<div class="list-title">
+			<div class="clock-hour"><i class="sprites recommend-o"></i></div>
+			<div>专题推荐</div>
+		</div>
+		<div class="">
+			<img width="100%" src="img/index/3502.jpg" />
+		</div>
+		<div class="am-g">
+			<div class="am-u-sm-4">
+				<a href="details1.html">
+					<div class="">
+						<img src="img/index/baokuan1.jpg" />
+					</div>
+					<div class="hourgou-info">
+						<div class="hourgou-name">
+							【官方直采】moony 尤妮佳 M 64片/包 2包装 纸尿裤/尿不湿 包装随机
+						</div>
+						<div class="hourgou-price center">
+							<span>&yen;164</span>
+							<span>&yen;<del>392</del></span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="am-u-sm-4">
+				<a href="details1.html">
+					<div class="">
+						<img src="img/index/baokuan4.jpg" />
+					</div>
+					<div class="hourgou-info">
+						<div class="hourgou-name">
+							VDL 细致毛孔保湿提亮妆前乳 贝壳提亮液 30毫升 毛孔隐形光彩立现
+						</div>
+						<div class="hourgou-price center">
+							<span>&yen;89</span>
+							<span>&yen;<del>298</del></span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="am-u-sm-4">
+				<a href="details1.html">
+					<div class="">
+						<img src="img/index/baokuan5.jpg" />
+					</div>
+					<div class="hourgou-info">
+						<div class="hourgou-name">
+							ReEn 睿嫣 润膏 洗护2合1洗发水 250毫升 无硅油 2瓶装
+						</div>
+						<div class="hourgou-price center">
+							<span>&yen;76</span>
+							<span>&yen;<del>199</del></span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!--热门市场-->
+		<div class="list-title">
+			<div class="clock-hour"><i class="sprites hot-market-o"></i></div>
+			<div>热门市场</div>
+		</div>
+		<div class="am-g">
+			<div class="am-u-sm-6">
+				<a href="details2.html">
+					<img src="img/index/hotmarket1.jpg" />
+				</a>
+			</div>
+			<div class="am-u-sm-6">
+				<a href="details2.html">
+					<img src="img/index/hotmarket2.jpg" />
+				</a>
+			</div>
+			<div class="am-u-sm-6">
+				<a href="details2.html">
+					<img src="img/index/hotmarket3.jpg" />
+				</a>
+			</div>
+			<div class="am-u-sm-6">
+				<a href="details2.html">
+					<img src="img/index/hotmarket4.jpg" />
+				</a>
+			</div>
+			<div class="am-u-sm-6">
+				<a href="details2.html">
+					<img src="img/index/hotmarket5.jpg" />
+				</a>
+			</div>
+			<div class="am-u-sm-6">
+				<a href="details2.html">
+					<img src="img/index/hotmarket6.jpg" />
+				</a>
+			</div>
+			<div class="am-u-sm-6">
+				<a href="details2.html">
+					<img src="img/index/hotmarket7.jpg" />
+				</a>
+			</div>
+			<div class="am-u-sm-6">
+				<a href="details2.html">
+					<img src="img/index/hotmarket8.jpg" />
+				</a>
+			</div>
+			<div class="am-u-sm-6">
+				<a href="details2.html">
+					<img src="img/index/hotmarket9.jpg" />
+				</a>
+			</div>
+			<div class="am-u-sm-6">
+				<a href="details2.html">
+					<img src="img/index/hotmarket10.jpg" />
+				</a>
+			</div>
+
+		</div>
+		<!--全球精选好物-->
+		<div class="list-title">
+			<div class="clock-hour"><i class="sprites globalgood-o"></i></div>
+			<div>全球精选好物</div>
+		</div>
+		<div id="gloable-goods" class="bg-grey">
+			<div class="cotainer">
+				<div class="am-g">
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable1.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									Gerber 嘉宝 DHA益生菌米粉 一段 227克
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>59</del>
+							</div>
+							<div class="now-price">
+								售价&yen;42
+								<span class="now-sale">7.2折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable2.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									MEDIHEAL 美迪恵尔 N.M.F针剂水库保湿面膜 10片/盒 补水网红
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>169</del>
+							</div>
+							<div class="now-price">
+								售价&yen;89
+								<span class="now-sale">5.3折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable11.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									SHISEIDO 资生堂 Fino 高效滋润渗透发膜 230克
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>145</del>
+							</div>
+							<div class="now-price">
+								售价&yen;59
+								<span class="now-sale">4.1折</span>
+							</div>
+						</div>
+						<div class="corner center">
+							满额减
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable4.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									【品牌直采 钙质易吸收 不腹胀】Swisse 钙&VD片 150片/罐
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>196</del>
+							</div>
+							<div class="now-price">
+								售价&yen;86
+								<span class="now-sale">4.4折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable14.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									<span class="red">2件装！</span>【澳洲本土版】Devondale 德运 高钙脱脂成人牛奶粉 1000克/袋 2袋
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>199</del>
+							</div>
+							<div class="now-price">
+								售价&yen;118
+								<span class="now-sale">单件&yen;59</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable6.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									FIRSTMIX【10双装】薄款棉底防滑短丝袜
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>146</del>
+							</div>
+							<div class="now-price">
+								售价&yen;29
+								<span class="now-sale">2.7折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable7.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									LAMY 凌美 狩猎者恒星通用Z28吸墨器 10克
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>50</del>
+							</div>
+							<div class="now-price">
+								售价&yen;33
+								<span class="now-sale">6.6折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable8.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									世果汇 【送开果器】泰国进口百香果30个 新鲜水果 单果约60-80克
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>99</del>
+							</div>
+							<div class="now-price">
+								售价&yen;39.9
+								<span class="now-sale">4.1折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable9.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									BRAUN 博朗 儿童耳温计红外线耳温枪 IRT6500 美国进口
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>576</del>
+							</div>
+							<div class="now-price">
+								售价&yen;257
+								<span class="now-sale">4.5折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable10.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									【防晒神器】let's diet 防晒帽 SPF50PA++
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>198</del>
+							</div>
+							<div class="now-price">
+								售价&yen;89
+								<span class="now-sale">4.5折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/baokuan2.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									Papa recipe 春雨 蜂蜜补水保湿面膜 25克/片 10片装 当红爆款
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>129</del>
+							</div>
+							<div class="now-price">
+								售价&yen;75
+								<span class="now-sale">5.9折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable22.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									<span class="red">2瓶装！</span>【爸爸去哪儿同款】熊野油脂 无硅弱酸性马油洗发水 600毫升/瓶 2瓶装
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>278</del>
+							</div>
+							<div class="now-price">
+								售价&yen;79
+								<span class="now-sale">2.9折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable5.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									【官方直采】Merries 花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>359</del>
+							</div>
+							<div class="now-price">
+								售价&yen;170
+								<span class="now-sale">单包&yen;85</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable15.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									FIRSTMIX【6双装】夏季薄款打底连裤袜丝袜女
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>96</del>
+							</div>
+							<div class="now-price">
+								售价&yen;45
+								<span class="now-sale">4.7折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable16.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									PHILIPS 飞利浦 Flexcare声波电动牙刷 HX6962 2支装
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>1899</del>
+							</div>
+							<div class="now-price">
+								售价&yen;929
+								<span class="now-sale">4.9折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable8.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									世果汇 泰国进口百香果10个单果约70-90克 西番莲
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>59</del>
+							</div>
+							<div class="now-price">
+								售价&yen;22.8
+								<span class="now-sale">3.9折</span>
+							</div>
+						</div>
+						<div class="corner center">
+							满件减
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable26.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									【包邮包税】Adidas 阿迪达斯 Superstar 金标贝壳头男女板鞋休闲鞋
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>799</del>
+							</div>
+							<div class="now-price">
+								售价&yen;649
+								<span class="now-sale">8.2折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable27.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									<span class="red">3包装</span>【官方直采】Merries 花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>599</del>
+							</div>
+							<div class="now-price">
+								售价&yen;237
+								<span class="now-sale">单包&yen;79</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable28.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									【品牌直采】【维持泌尿健康】Swisse 高浓度蔓越莓25000mg 30粒/瓶
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>238</del>
+							</div>
+							<div class="now-price">
+								售价&yen;88
+								<span class="now-sale">3.7折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable26.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									【包邮包税】Adidas 阿迪达斯 Superstar 金标贝壳头男女板鞋休闲鞋
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>799</del>
+							</div>
+							<div class="now-price">
+								售价&yen;649
+								<span class="now-sale">8.2折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable29.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									Gerber 嘉宝混合水果味酸奶小溶溶豆 宝宝零食 28克
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>48</del>
+							</div>
+							<div class="now-price">
+								售价&yen;36
+								<span class="now-sale">7.5折</span>
+							</div>
+						</div>
+						<div class="corner center">
+							N元任选
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable21.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									Naturie imju 薏仁美白保湿防晒化妆水 500毫升 我是大美人强推
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>150</del>
+							</div>
+							<div class="now-price">
+								售价&yen;55
+								<span class="now-sale">3.5折</span>
+							</div>
+						</div>
+						<div class="corner center">
+							N元任选
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable22.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									<span class="red">2瓶装!</span>【爸爸去哪儿同款】熊野油脂 无硅弱酸性马油洗发水 600毫升/瓶 2瓶装
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>278</del>
+							</div>
+							<div class="now-price">
+								售价&yen;79
+								<span class="now-sale">2.9折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable14.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									<span class="red">2件装！</span>【澳洲本土版】Devondale 德运 高钙脱脂成人牛奶粉 1000克/袋 2袋
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>199</del>
+							</div>
+							<div class="now-price">
+								售价&yen;118
+								<span class="now-sale">单件&yen;59</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable15.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									FIRSTMIX【6双装】夏季薄款打底连裤袜丝袜女
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>96</del>
+							</div>
+							<div class="now-price">
+								售价&yen;45
+								<span class="now-sale">4.7折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable24.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									PHILIPS 飞利浦 Flexcare声波电动牙刷 HX6962 2支装
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>1899</del>
+							</div>
+							<div class="now-price">
+								售价&yen;929
+								<span class="now-sale">4.5折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable30.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									鲜百年 墨西哥进口牛油果 8个装 单果重160-180克
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>69</del>
+							</div>
+							<div class="now-price">
+								售价&yen;66
+								<span class="now-sale">9.6折</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable31.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									Gerber 嘉宝 切达奶酪泡芙条 42克
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>50</del>
+							</div>
+							<div class="now-price">
+								售价&yen;36
+								<span class="now-sale">7.2折</span>
+							</div>
+						</div>
+						<div class="corner center">
+							N元任选
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable18.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									<span class="red">2包装！</span>【官方直采】Merries 花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>359</del>
+							</div>
+							<div class="now-price">
+								售价&yen;170
+								<span class="now-sale">单包&yen;85</span>
+							</div>
+						</div>
+					</div>
+					<div class="am-u-sm-6">
+						<a href="details1.html">
+							<img src="img/index/gloable13.jpg" />
+						</a>
+						<div class="gloable-text">
+							<div class="gloable-goods-info">
+								<a href="details1.html">
+									【品牌直采 维持皮肤水润弹性】Swisse 护发护肤护甲口服液 500ml/瓶
+								</a>
+							</div>
+							<div class="nation-price">
+								国内价&yen;<del>216</del>
+							</div>
+							<div class="now-price">
+								售价&yen;129
+								<span class="now-sale">6.0折</span>
+							</div>
+						</div>
+						<div class="corner center">
+							满额减
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="index-bottom center">
+			<span class="kl"><img src="img/index/kaola.png"/></span>
+			<span>别拉了，到底啦~</span>
+		</div>
+		<!--最底部-->
+		<div class="max-bottom">
+			<div class="list-line center">
+				<a href="index.html">首页</a>
+				<span>|</span>
+				<a href="index.html">客户端</a>
+				<span>|</span>
+				<a href="login.html">登录</a>
+				<span>|</span>
+				<a href="login.html">注册</a>
+			</div>
+			<div class="copyright center">
+				网易公司版权所有@1997-2017
+			</div>
+		</div>
+		<!--返回顶部-->
+		<div data-am-widget="gotop" class="am-gotop am-gotop-fixed">
+			<a href="#top" title="回到顶部">
+				<div class="gototop relative">
+					<i class="up"></i>
+					<p class="gototop-p">顶部</p>
+				</div>
+			</a>
+		</div>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/amazeui.min.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

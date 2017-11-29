@@ -1,0 +1,572 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/main-style.css" />
+		<link rel="stylesheet" type="text/css" href="css/index-stylea.css" />
+		<link rel="stylesheet" type="text/css" href="css/shoppingCarta.css" />
+		<link rel="stylesheet" type="text/css" href="css/order-submita.css" />
+	</head>
+
+	<body>
+		<!--header头部-->
+		<div class="header-zt">
+			<div class="container container-zt relative">
+				<div class="log-zt fl">
+					<a href="index.html"><img src="img/spring-yzt.png" /></a>
+				</div>
+				<div class="bar-zt fr">
+					<ul class="nav-zt">
+						<li class="fl">
+							<a class="active-zt" href="index.html">在线商城</a>
+						</li>
+						<li class="fl">
+							<a href="ticwatchs.html">TicwatchS</a>
+						</li>
+						<li class="fl">
+							<a href="ticwatche.html">TicwatchE</a>
+						</li>
+						<li class="fl">
+							<a href="ticwear.html">Ticwear</a>
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!--第二部分-->
+		<div class="box-zt">
+			<div class="container">
+				<div class="second-left-zt fl">
+					<ul class="msg">
+						<li class="msg-con fl">
+							<a href="ticwatche.html">Ticwatch2</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="ticwear.html">Ticmirror</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="Allgoods.html">折扣商品</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="Allgoods.html">手表配件</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="Allgoods.html">其他周边</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="Allgoods.html">全部商品</a>
+						</li>
+					</ul>
+				</div>
+				<div class="second-right-zt fr">
+					<div class="fr shop">
+						<a href="shoppingCart.html"><img src="img/shop-zt.png" width="20px" alt="" /></a>
+					</div>
+					<div class="fr man">
+						<a href="login.html"><img src="img/man-zt.png" width="20px" alt="" /></a>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+		<div class="menubox container">
+			<div class="leftmenu">
+				<dl>
+					<dt><img src="img/activity_fill.png"/>订单管理<dt>
+					<dd><span id="span1">
+						我的订单
+					</span></dd>
+					<dt><img src="img/activity_fill.png"/>账户管理</dt>
+					<dd><span id="span2">
+						优惠券
+					</span></dd>
+					<!--<dd><span id="span3">
+						推荐码
+					</span></dd>-->
+					<dd><span id="span4">
+						奖励提现
+					</span></dd>
+					<dt><img src="img/activity_fill.png"/>个人信息</dt>
+					<dd><span id="span5">
+						个人资料
+					</span></dd>
+					<dd id="span3">收货地址</dd>
+				</dl>
+			</div>
+			
+			<div class="rightdiv" id="div1">
+				<h3 class="h3">个人资料</h3>
+				<div class="item">
+					<span class="lable">用户名：</span>
+					<div class="fl">
+                        <div><strong>桥本奈奈未love</strong></div>
+                       </div>
+               	</div>
+				<div class="item">
+					<div class="item" id="">
+                            <span class="label fl move"><em>*</em>&nbsp;登录名：</span>
+                            <div class="fl" id="">
+                                <strong>桥本奈奈未love</strong>
+                                <a href="" class="set" onclick="changeTag()">修改</a>
+                                <span class="">可用于登录，请牢记哦~</span>
+                                <div class="clear"></div>
+                                <div class=""><span id=""></span></div>
+                            </div>
+                            <div class="fl" id="" style="display: none">
+                                <input  type="text" class="" maxlength="20" id="a" name="" value="桥本奈奈未love">
+                                <input type="hidden" id="" value="桥本奈奈未love">
+                                <span class="">可用于登录，请牢记哦~</span>
+                              	<div class="clear"></div>
+                              	<div class=""><span id=""></span></div>
+                            </div>
+                    </div>
+				</div>
+				<div class="item">
+                    <span class="label fl move1"><em>*</em>&nbsp;昵称：</span>
+                     <div class="fl">                   
+                     <input  type="text" class="set1" maxlength="20" id="" name="" value="桥本奈奈未love">
+                     <div><a href="#"><img src="img/succ-ico.png" class="set0"/></a></div>
+                     <div class="clear"></div>
+                     </div>
+                </div>
+				<div class="item">
+                    <span class="label fl move2">性别：</span>
+                    <div class="fl">
+                    <input type="radio" name="sex" class="radio" value="0"><label class="">男</label>
+                    <input type="radio" name="sex" class="radio" value="1"><label class="">女</label>
+                    <input type="radio" name="sex" class="radio" value="2"><label class="">保密</label>
+                    </div>
+               </div>
+				<div class="item1">
+                    <span class="label fl move3">生日：</span>
+                    <select name="" class="" id=""><option value="0" selected="selected">请选择：</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="00后">00后</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="90后">90后</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="80后">80后</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="70后">70后</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option><option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970">1970</option><option value="60后">60后</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1965">1965</option><option value="1964">1964</option><option value="1963">1963</option><option value="1962">1962</option><option value="1961">1961</option><option value="1960">1960</option><option value="50后">50后</option><option value="1959">1959</option><option value="1958">1958</option><option value="1957">1957</option><option value="1956">1956</option><option value="1955">1955</option><option value="1954">1954</option><option value="1953">1953</option><option value="1952">1952</option><option value="1951">1951</option><option value="1950">1950</option><option value="40后">40后</option><option value="1949">1949</option><option value="1948">1948</option><option value="1947">1947</option><option value="1946">1946</option><option value="1945">1945</option><option value="1944">1944</option><option value="1943">1943</option><option value="1942">1942</option><option value="1941">1941</option><option value="1940">1940</option><option value="30后">30后</option><option value="1939">1939</option><option value="1938">1938</option><option value="1937">1937</option><option value="1936">1936</option><option value="1935">1935</option><option value="1934">1934</option><option value="1933">1933</option><option value="1932">1932</option><option value="1931">1931</option><option value="1930">1930</option></select>
+                    <label class="radio">年</label>
+                    <select name="" class="" id=""><option value="0" selected="selected">请选择：</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
+                    <label class="radio">月</label>
+                    <select name="" class="" id=""><option value="0" selected="selected">请选择：</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="1">13</option><option value="2">14</option><option value="3">15</option><option value="4">16</option><option value="5">17</option><option value="6">18</option><option value="7">19</option><option value="8">20</option><option value="9">21</option><option value="10">22</option><option value="11">23</option><option value="12">24</option><option value="10">25</option><option value="11">26</option><option value="12">27</option><option value="10">28</option><option value="11">29</option><option value="12">30</option><option value="12">31</option></select>
+                    <label class="radio">日</label>
+                    <span class="">填生日有惊喜哦~</span>
+				</div>
+				<div class="item">
+					<span class="label fl move4">邮箱：</span>
+					<a href="#" class="fl set"><s></s>立即验证</a>
+					<div class="clear"></div>		
+					<input type="submit" name="" id="" value="提交" class="move5 set"/>
+					<a href="persona.html"><input type="submit" name="" id="" value="修改" class="move5 set"/></a>
+				</div>
+			</div>
+			<div class="rightdiv3" id="div2">
+				<!--购物车-->
+		<div class="cart-bg cart-bg-padding">
+				<!--购物车标题-->
+				<!--购物车列表-->
+				<div class="cart-cont cart-main-border">
+					<!--购物车列表表头-->
+					<div class="cart-cont-head cart-main-border cart-form-background">
+						<div class="cart-checked-group">
+							<label for="cart-select-all" class="cart-select-all cart-font-text-color">
+							<input type="checkbox" name="selected-all" id="cart-select-all">
+							<span class="name cart-font-text-color">商品名称</span>
+							<span class="quantity cart-font-text-color">数量</span>
+							<span class="subtotal cart-font-text-color">单价</span>
+							<span class="cart-font-text-color ipay">支付详情</span>
+						</div>
+					</div>
+					<ul class="cart-cont-list empty" id="cart-cont-list">
+						<!--购物车为空时，中间的大图-->
+						<li class="cart-main-border">
+							<div class="cart-cont-item"><span class="cart-photo"></span>您的购物车还没有商品，快去挑选心爱的商品吧！<br>
+								<a href="#" class="btn btn-primary btn-sm">去逛逛</a>
+							</div>
+						</li>
+						<!--商品列表-->
+						<li class="cart-main-border">
+							<div class="cart-cont-item cart-cont-item-product cart-form-background cart-main-border" data-vid="4398904" data-reason="">
+								<!--图片-->
+								<div class="img"><img src="img/s(1).jpeg" alt="Ticwatch定制冰箱贴"></div>
+								<!--商品名称，连接到详情页-->
+								<div class="name">
+									<a href="https://store.ticwear.com/products/p000124" target="_blank" class="yhsd-font-title">Ticwatch定制冰箱贴</a>
+								</div>
+								<div class="sku hidden yhsd-font-desc"><span class="edit yhsd-base-iconfont icon-edit"></span></div>
+								<style>
+									.cart-cont-item-product>.sku.active .edit:before {
+										content: "edit";
+										font-family: "Microsoft Yahei", verdana!important;
+									}
+								</style>
+								<!--单价-->
+								<div class="unit-price cart-font-text-color">多种</div>
+								<!--数量-->
+								<div class="control">
+									<div class="quantity-selector cart-font-text-color">
+										<span class="icon-minus">
+											&lt;
+										</span>
+										<input class="cart-font-text-color cart-kuang" type="text" value="1">
+										<span class="icon-add">
+											&gt;
+										</span>
+									</div>
+								</div>
+								<!--小计-->
+								<div class="price cart-font-text-color">&yen;19.9</div>
+								<!--操作-->
+								<div class="ipay1" style="padding: 6px 16px;color: white;">
+									<a href="order-submit.html">立即支付</a>
+								</div>
+							</div>
+						</li>
+						<li class="cart-main-border">
+							<div class="cart-cont-item cart-cont-item-product cart-form-background cart-main-border" data-vid="4421323" data-reason="">
+								<!--图片-->
+								<div class="img"><img src="img/s.jpeg" alt="白色硅胶表带-适配ticwatch2"></div>
+								<!--商品名称，连接到详情页-->
+								<div class="name">
+									<a href="https://store.ticwear.com/products/p000100" target="_blank" class="yhsd-font-title">白色硅胶表带-适配ticwatch2</a>
+								</div>
+								<div class="sku hidden yhsd-font-desc"><span class="edit yhsd-base-iconfont icon-edit"></span></div>
+								<style>
+									.cart-cont-item-product>.sku.active .edit:before {
+										content: "edit";
+										font-family: "Microsoft Yahei", verdana!important;
+									}
+								</style>
+								<!--单价-->
+								<div class="unit-price cart-font-text-color">白色</div>
+								<!--数量-->
+								<div class="control">
+									<div class="quantity-selector cart-font-text-color">
+										<span class="icon-minus">
+											&lt;
+										</span>
+										<input class="cart-font-text-color cart-kuang" type="text" value="1">
+										<span class="icon-add">
+											&gt;
+										</span>
+									</div>
+								</div>
+								<!--小计-->
+								<div class="price cart-font-text-color">&yen;99</div>
+								<!--操作-->
+								<div class="ipay1" style="padding: 6px 16px;color: white;">
+									<a href="order-submit.html">立即支付</a>
+								</div>
+							</div>
+						</li>					
+					</ul>
+				</div>
+		</div>
+			</div>
+			<div class="rightdiv2" id="div3">
+				<div class="tab" id="tab1">
+			<ul class="tab-title clear" id="">
+				<li>全部优惠券</li>
+				<li>可使用</li>
+				<li>已过期</li>
+			</ul>
+			<ul class="tab-content" id="">
+				<li><a href=""><img src="img/youhuijuan1.png"/></a><a href=""><img src="img/youhuijuan2.png"/></a></li>
+				<li><a href=""><img src="img/youhuijuan1.png"/></a><a href=""><img src="img/youhuijuan2.png"/></a>></li>
+				<li><a href=""><img src="img/youhuijuan3.png"/></a></li>
+			</ul>
+		</div>
+			</div>
+			<div class="rightdiv4" id="div4">
+				<h3 class="h3">收货地址</h3>
+				<div class="item">
+					<span class="lable">收货人：</span>
+					<div class="fl">
+                        <input type="text" name="" id="" value="" placeholder="请输入您的姓名" class="hei"/>
+                       </div>
+               	</div>
+				<div class="item">
+					<div class="item" id="">
+                            <span class="label fl movea"><em>*</em>&nbsp;所在地区：</span>
+                            <div class="fl" id="">
+                                <input type="text" name="" id="" value="" placeholder="山东/青岛" class="hei"/>
+                                <div class="clear"></div>
+                                <div class=""><span id=""></span></div>
+                            </div>
+                            <div class="fl" id="" style="display: none">
+                                <input  type="text" class="" maxlength="20" id="a" name="" value="桥本奈奈未love">
+                                <input type="hidden" id="" value="桥本奈奈未love">
+                              	<div class="clear"></div>
+                              	<div class=""><span id=""></span></div>
+                            </div>
+                    </div>
+				</div>
+				<div class="item">
+                    <span class="label fl moveb"><em>*</em>&nbsp;详细地址：</span>
+                     <div class="fl">                   
+                     <input  type="text"  id="" name="" placeholder="请填入您的详细地址" class="leng">
+                     <div><a href="#"><img src="img/succ-ico.png" class="set0"/></a></div>
+                     <div class="clear"></div>
+                     </div>
+                </div>
+				<div class="itema">
+					手机号： <input type="text" name="" id="" value="" placeholder="请填入您的手机号" class="hei"/>
+				</div>
+				<div class="itemb">
+					邮箱： <input type="text" name="" id="" value="" placeholder="请填入您的邮箱" class="hei"/>
+				</div>
+				<div class="itemc">
+					 <input type="submit" name="" id="" value="保存您的收货地址" class="hei"/>
+				</div>
+			</div>
+			<div class="rightdiv5" id="div5">
+				<div class="tuijiana">
+					奖励提现
+				</div>
+				<div class="tuijianb">
+					可提现金额：0元
+				</div>
+				<div class="tuijianc">
+					暂无可用金额  <a class="a1">怎样赚钱</a>
+				</div>
+			</div>
+		</div>
+		<!--footer尾部-->
+		
+		<div class="footer-zt">
+			<div class="container">
+				<div class="foot-one-zt">
+					<ul class="foot-one-zt-con">
+						<li class="foot-one-zt-msg fl">
+							<a href="#"><img src="img/seven.png" width="25px" /></a>
+							<span class="foot-one-zt-msg1">
+								7天无理由退货
+							</span>
+						</li>
+						<li class="foot-one-zt-msg fl">
+							<a href="#"><img src="img/gohome.png" width="25px" /></a>
+							<span class="foot-one-zt-msg1">
+								15天免费换货
+							</span>
+						</li>
+						<li class="foot-one-zt-msg fl">
+							<a href="#"><img src="img/plent.png" width="25px" /></a>
+							<span class="foot-one-zt-msg1">
+								满99顺丰包邮
+							</span>
+						</li>
+						<li class="foot-one-zt-msg fl">
+							<a href="#"><img src="img/man.png" width="25px" /></a>
+							<span class="foot-one-zt-msg1">
+								在线客服
+							</span>
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+
+				<div class="foot-two-zt">
+					<ul class="foot-two-zt-con">
+						<li class="foot-two-zt-msg relative fl">
+							<img class="fl" src="img/weixin.png" />
+							<div class="foot-two-zt-msg1 fr">
+								<div class="msg1">
+									<a href="#">微信公众号</a>
+								</div>
+								<div class="msg2">
+									版本升级、功能更新、优惠活动等讯息第一时间掌握。
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="tan-zt">
+								<img src="img/tan-zt.png" />
+							</div>
+						</li>
+						<li class="foot-two-zt-msg fl">
+							<img class="fl" src="img/weibo.png" />
+							<div class="foot-two-zt-msg1 fr">
+								<div class="msg1">
+									<a href="#">新浪微博</a>
+								</div>
+								<div class="msg2">
+									向全球用户寻求帮助，或分享您的经验。
+								</div>
+							</div>
+							<div class="clear"></div>
+						</li>
+						<li class="foot-two-zt-msg active-zt2 fl">
+							<img class="fl" src="img/wlogo.png" />
+							<div class="foot-two-zt-msg1 fr">
+								<div class="msg1">400-883-8390</div>
+								<div class="msg2">
+									周一至周日 9:00-21:00（仅收市话费）。
+								</div>
+							</div>
+							<div class="clear"></div>
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+
+				<div class="foot-three-zt">
+					<table cellpadding="0" cellspacing="0">
+						<tr>
+							<th>产品</th>
+							<th>帮助</th>
+							<th>媒体</th>
+							<th>开发者</th>
+							<th>出门问问</th>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Ticwatch</a>
+							</td>
+							<td>
+								<a href="#">引导教程</a>
+							</td>
+							<td>
+								<a href="#">公司新闻</a>
+							</td>
+							<td>
+								<a href="#">手表开发者平台</a>
+							</td>
+							<td>
+								<a href="#">关于问问</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Ticwatch2</a>
+							</td>
+							<td>
+								<a href="#">视频引导</a>
+							</td>
+							<td>
+								<a href="#">产品消息</a>
+							</td>
+							<td>
+								<a href="#">TicDesign</a>
+							</td>
+							<td>
+								<a href="#">工作机会</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Ticmirror</a>
+							</td>
+							<td>
+								<a href="#">应用</a>
+							</td>
+							<td>
+								<a href="#">媒体报道</a>
+							</td>
+							<td>
+								<a href="#">AI开放平台</a>
+							</td>
+							<td>
+								<a href="#">联系我们</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">配件</a>
+							</td>
+							<td>
+								<a href="#">售后政策</a>
+							</td>
+							<td>
+								<a href="#">视频</a>
+							</td>
+							<td></td>
+							<td>
+								<a href="#">资料下载</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="foot-four-zt">
+					<span class="foot-four-zt-msg1">
+					Copyright © 2017 Mobvoi Inc. All Rights Reserved. 北京羽扇智信息科技有限公司京ICP备14058077号-1京公网安备11010802023146
+				</span>
+					<span class="foot-four-zt-msg2"><a href="#">服务条款</a></span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/stylea.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/shoppingCarta.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#span5").click(function () {
+			$("#div1").css("display","inline-block");
+			$("#div2").css("display","none")
+			$("#div3").css("display","none")
+			$("#div4").css("display","none")
+			$("#div5").css("display","none")
+		})
+		$("#span1").click(function () {
+			$("#div2").css("display","inline-block");
+			$("#div1").css("display","none")
+			$("#div3").css("display","none")
+			$("#div4").css("display","none")
+			$("#div5").css("display","none")
+		})
+		$("#span2").click(function () {
+		$("#div3").css("display","inline-block");
+		$("#div1").css("display","none")
+		$("#div2").css("display","none")
+		$("#div4").css("display","none")
+		$("#div5").css("display","none")
+		})
+		$("#span3").click(function () {
+		$("#div4").css("display","inline-block");
+		$("#div1").css("display","none")
+		$("#div2").css("display","none")
+		$("#div3").css("display","none")
+		$("#div5").css("display","none")
+		})
+		$("#span4").click(function () {
+		$("#div5").css("display","inline-block");
+		$("#div1").css("display","none")
+		$("#div2").css("display","none")
+		$("#div3").css("display","none")
+		$("#div4").css("display","none")
+		})
+	</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var $cartItemA = $("#cart-cont-list li .cart-cont-item a");
+				$cartItemA.hover(function() {
+					$(this).addClass("white-cover");
+				}, function() {
+					$(this).removeClass("white-cover");
+				})
+				//当购物车中有商品时执行
+				$("#cart-cont-list li").eq(0).hide();
+				$("#cart-cont-list").removeClass("empty");
+			})
+		</script>
+		<script type="text/javascript">
+		window.onload=function () {
+			oTi=document.querySelectorAll(".tab-title li")
+			oCo=document.querySelectorAll(".tab-content li")
+			for (var i=0;i<oTi.length;i++) {
+				oTi[i].index=i;
+				oTi[i].onclick=function () {
+					for (var i=0;i<oTi.length;i++)
+					{
+						oTi[i].className=''
+						oCo[i].style.display='none'
+					}
+					this.className='active'
+					oCo[this.index].style.display='block';
+				}
+			}
+		}
+		</script>
+</html>

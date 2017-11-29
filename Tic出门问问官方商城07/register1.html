@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>注册问问ID</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <style type="text/css">
+		body{background: #eee;padding-top: 100px;}
+	</style>
+</head>
+<body usage="register">
+<div class="wrapper">
+    <header>
+        <img src="img/logo.png" class="logo">
+        <h2>注册问问ID</h2>
+    </header>
+    <div id="formContent">
+        <section class="phone-register" id="firstSection">
+			<form action="" method="post" class="demoform">
+				<div class="form-group">
+                <input type="text" id="phone" placeholder="手机号" autocomplete="off" err-tip="请输入正确的手机号" value-type="phone"  
+                required datatype="e" minlength="11" maxlength="11" sucmsg="用户名验证通过" nullmsg="请输入用户名" errormsg="账号为11位字符">
+                <div hidden="hidden" id="phoneErrorTip2">该手机号已存在问问ID，请直接登录</div>
+                <p class="error-tips _error-tips"></p>
+            </div>
+            <div class="form-group">
+                <input type="password" class="_password" placeholder="密码" autocomplete="off" id="change" 
+                minlength="8" maxlength="30" required datatype="*8-30" sucmsg="密码可用!" nullmsg="请输入密码!" errormsg="密码为8至30位字符">
+                <i class="close-eye" id="passwordSwitch"></i>
+                <p class="error-tips _error-tips"></p>
+            </div>
+            <div class="register-password-limits">
+                <ul>
+                    <li class="password-tip" id="lengthCase">至少为8位</li>
+                    <li class="password-tip" id="numberCase">至少包含一个数字</li>
+                    <li class="password-tip" id="upperCase">至少包含一个大写字母</li>
+                </ul>
+            </div>
+            <div class="btn login-btn" ><button type="submit" class="btn login-btn  disable del1" id="toSmsBtn">立即注册</button></div>
+            </form>
+            <p class="agreement">
+                点击&#34;立即注册&#34;代表您同意遵守
+                <a href="http://developer.chumenwenwen.com/agreement/" target="_blank">用户协议</a>
+                和
+                <a target="_blank" href="http://developer.chumenwenwen.com/agreement/#privacyPolicy">隐私条款</a>
+            </p>
+            <p class="link-bottom"><a href="login.html" id="backToLogin">返回登录</a></p>
+        </section>
+        <section class="hide" id="secondSection">
+            <div class="form-group img-code" id="ImgFormGroup">
+                <input type="text" id="imgCaptcha" placeholder="图片验证码" autocomplete="off" err-tip="请输入图片验证码" value-type="required">
+                <div class="tips-verify" id="getImg">
+                    <img id="randomImg" src="">
+                </div>
+                <div class="clearfix"></div>
+                <p class="error-tips _error-tips"></p>
+            </div>
+            <div class="form-group register-bind-code">
+                <input type="text" id="smsCaptcha" placeholder="验证码" err-tip="请输入正确的验证码" value-type="length4" autocomplete="off">
+                <span id="smsBtn" class="get-code" re-send-text="重新发送">获取验证码</span>
+                <div class="clearfix"></div>
+                <p class="error-tips _error-tips _server-tips"></p>
+            </div>
+            <div class="disabled btn next-step" id="finishBtn">完成注册</div>
+            <p class="dial">
+                <i>?</i>没有收到验证码请拨打 400-883-8390
+            </p>
+        </section>
+    </div>
+</div>
+<footer>
+   Copyright © 2017 Mobvoi Inc. All Rights Reserved. 北京羽扇智信息科技有限责任公司 京ICP备14058077号-1
+</footer>
+<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+<!--<script src="js/Validform_v5.3.2_min.js" type="text/javascript" charset="utf-8"></script>-->
+<script src="js/Validform_v5.3.2.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	 var flag=1
+	 $(".close-eye").click(function () {
+	 	if (flag==1) {
+	 		$(this).css("background","url(img/1open-eye.png)")
+	 		$("#change").attr("type","text")
+	 		flag=0
+	 	} else{
+			$(this).css("background","url(img/1close-eye.png)")
+	 		$("#change").attr("type","password")
+	 		flag=1
+	 	}
+	 })
+</script>
+<script>
+		$(".demoform").Validform({
+			//				btnSubmit: "#register",
+			//				btnReset: ".btn_reset",
+			tiptype: 1,
+			//				ignoreHidden: false,
+			ignoreHidden: true,
+			//				tipSweep: true,
+			tipSweep: false,
+			label: ".label",
+			showAllError: false,
+			postonce: true,
+			ajaxPost: true,
+			callback: function(data) {
+				console.log(data)
+				if(data.status) {
+					$.Hidemsg()
+				} else {
+					$.Showmsg(data.message);
+				}
+			},
+			datatype: {
+				"e":/^0?(13|15|17|18|14)[0-9]{9}$/,
+				"*8-30": /^[A-Z]|[0-9]$/,
+//				"*6-20": /^[^\s]{6,20}$/,
+//				"z2-4": /^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/,
+				"username": function(gets, obj, curform, regxp) {
+					//参数gets是获取到的表单元素值，obj为当前表单元素，curform为当前验证的表单，regxp为内置的一些正则表达式的引用;
+					var reg1 = /^0?(13|15|17|18|14)[0-9]{9}$/,
+						reg2 =/^[A-Z]|[0-9]$/;
+
+					if(reg1.test(gets)) {
+						return true;
+					}
+					if(reg2.test(gets)) {
+						return true;
+					}
+					return false;
+
+					//注意return可以返回true 或 false 或 字符串文字，true表示验证通过，返回字符串表示验证失败，字符串作为错误提示显示，返回false则用errmsg或默认的错误提示;
+				},
+				"phone": function() {
+					// 5.0 版本之后，要实现二选一的验证效果，datatype 的名称 不 需要以 "option_" 开头;	
+				}
+			},
+			usePlugin: {
+				swfupload: {},
+				datepicker: {},
+				passwordstrength: {},
+				jqtransform: {
+					selector: "select,input"
+				}
+			},
+			beforeCheck: function(curform) {
+				//在表单提交执行验证之前执行的函数，curform参数是当前表单对象。
+				//这里明确return false的话将不会继续执行验证操作;	
+			},
+			beforeSubmit: function(curform) {
+				//在验证成功后，表单提交前执行的函数，curform参数是当前表单对象。
+				//这里明确return false的话表单将不会提交;	
+			},
+			callback: function(data) {
+				//返回数据data是json对象，{"info":"demo info","status":"y"}
+				//info: 输出提示信息;
+				//status: 返回提交数据的状态,是否提交成功。如可以用"y"表示提交成功，"n"表示提交失败，在ajax_post.php文件返回数据里自定字符，主要用在callback函数里根据该值执行相应的回调操作;
+				//你也可以在ajax_post.php文件返回更多信息在这里获取，进行相应操作；
+				//ajax遇到服务端错误时也会执行回调，这时的data是{ status:**, statusText:**, readyState:**, responseText:** }；
+
+				//这里执行回调操作;
+				//注意：如果不是ajax方式提交表单，传入callback，这时data参数是当前表单对象，回调函数会在表单验证全部通过后执行，然后判断是否提交表单，如果callback里明确return false，则表单不会提交，如果return true或没有return，则会提交表单。
+			}
+		});
+	</script>
+	<script type="text/javascript">
+		var flag1=0;
+		var flag2=0;
+		var flag3=0;
+		$("#change").keydown(function(event) { var keyCode = event.keyCode;	//alert(event.keyCode)
+		if (event.keyCode>=65 && event.keyCode<=90) {
+		$("#upperCase").css("background","url(img/success-icon.png) no-repeat left center");
+		$("#upperCase").css("background-size","16px 16px")
+		flag1=1;
+		}
+		else if(event.keyCode>=48 && event.keyCode<=57){
+		$("#numberCase").css("background","url(img/success-icon.png) no-repeat left center");
+		$("#numberCase").css("background-size","16px 16px")	
+		flag2=1
+		}
+//		console.log($("#change").val().length)
+		if ($("#change").val().length>=7) {
+		$("#lengthCase").css("background","url(img/success-icon.png) no-repeat left center");
+		$("#lengthCase").css("background-size","16px 16px")
+		flag3=1
+		}
+		if (toString($("#phone").val())!=null && flag1==1 && flag2==1 && flag3==1) {
+		$("button").removeClass("disable");
+		}
+		console.log($("#change").val());
+		var str1=/^[A-Za-z0-9]+$/
+		var str2=/^.{8,30}$/
+		console.log(str1.test($("#change").val()))
+		console.log(str2.test($("#change").val()))
+		if(!str2.test($("#change").val()))
+		{
+		$("#lengthCase").css("background","url(img/tip-fill.png) no-repeat left center");
+		$("#lengthCase").css("background-size","16px 16px")
+		}
+		if (!str1.test($("#change").val())) {
+		$("#numberCase").css("background","url(img/tip-fill.png) no-repeat left center");
+		$("#numberCase").css("background-size","16px 16px")	
+		$("#upperCase").css("background","url(img/tip-fill.png) no-repeat left center");
+		$("#upperCase").css("background-size","16px 16px")
+		}})
+	</script>
+</body>
+</html>

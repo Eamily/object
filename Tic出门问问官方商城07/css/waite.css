@@ -1,0 +1,176 @@
+@charset "utf-8";
+body,html{
+	background-color:#eff0f2;
+	position: relative;
+}
+.header{
+	padding-top: 8px;
+	background-color:#81868a;
+	padding-bottom: 8px;
+}
+.header span{
+	color: white;
+}
+.header .tip1{
+	padding-right:22px;
+	margin-right:14px;
+	border-right: 1px solid #686d71;
+	}
+.header2{
+	background-color: white;
+	border-bottom: 2px solid #d8d9db;
+}
+.header2 .box-zt{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	vertical-align: middle;
+}
+.header2-tip2{
+	padding-top:20px;
+	padding-left: 10px;
+}
+.box-zt img{
+	border-right: 2px solid gray;
+	padding-right: 10px;
+}
+.header3{
+	
+	padding-top:35px;
+	height:81px;
+	z-index: 1;
+}
+.header3-tip3 .tip3-bar,.header3-tip1,.header3-tip2{
+	color:black;
+}
+.header3-tip1 .star{
+	color:blue;
+}
+.header3-tip1 .tip-small{
+	position: absolute;
+	top:-10px;
+	left:15px;
+	display: none;
+}
+.header3-tip1 .star:hover .tip-small{
+	display: block;
+}
+.header3-tip1{
+	padding-bottom: 18px;
+}
+.header3-tip2{
+	padding-bottom: 22px;
+	font-size: 16px;
+	font-weight:bolder;
+}
+.tip3-bar{
+	padding-bottom: 6px;
+}
+.header3-right{
+	padding-top:30px;
+	
+}
+.header3-right span{
+	font-size: 16px;
+	color: red;
+}
+/*切换*/
+.header4 .qiehuan{
+	position: absolute;
+	height:534px;
+	width:148px;
+	right: 0px;
+	top:0px;
+	background-color:#e6e6e6;
+	text-align: center;
+line-height:534px;
+}
+
+
+.container4{
+	height:534px;
+	background-color: white;
+	border-bottom:3px solid #b3b3b3;
+	border-top:3px solid #b3b3b3;
+	position:absolute;
+	top:640px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	margin: auto;
+	z-index: 2;
+}
+/*切换*/
+.qiehuan{
+	cursor: pointer;
+}
+
+.alipayoffer{
+	text-align: center;
+	padding-top:100px ;
+}
+.alipayoffer1{
+	color: black;
+}
+.alipayoffer2{
+	font-size: 30px;
+	color: red;
+	font-weight: bolder;
+}
+.download{
+	text-align: center;
+	font-size:12px;
+	text-decoration: underline;
+}
+.container4 .saoyisao{
+	text-align: center;
+	padding-top: 30px;
+}
+.circletip{
+	cursor: pointer;
+}
+.circletip1{
+	position: absolute;
+	top:-50px;
+	right:240px;
+}
+.circletip2{
+	position: absolute;
+	top:-50px;
+	right:240px;
+}
+.offer-message{
+	position: absolute;
+	width:88px;
+	min-width: 88px;
+	height:22px;
+	background-color:#b3b3b3;
+	top:-22px;
+	right:20px;
+	text-align: center;
+	cursor: pointer;
+}
+.offer-message div{
+	width:88px;
+	text-align: center;
+	color: white;
+	font-size:14px;
+	font-weight: bolder;
+}
+.header5{
+	position:absolute;
+	top:800px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	margin: auto;
+	text-align: center;
+}
+.header6{
+	position:absolute;
+	top:900px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	margin: auto;
+	text-align: center;
+}

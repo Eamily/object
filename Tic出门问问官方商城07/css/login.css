@@ -1,0 +1,210 @@
+@charset "utf-8";
+.container
+{
+	width: 1080px;
+	margin: 0 auto;
+}
+body,html
+{	
+	-webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+	font-family: "微软雅黑";
+}
+html {
+    display: block;
+}
+body{
+	width: 100%;
+}
+.wrapper
+{
+	background: #fff;
+    margin: 0 auto;
+    width: 400px;
+    position: relative;
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+}
+.logo {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+header h2 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #000;
+    text-align: center;
+    font-weight: normal;
+}
+header {
+    display: block;
+    padding: 45px 0;
+    text-align: center;
+    font-size: 0;  
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+section {
+    min-height: 286px;
+    padding: 0 45px 30px;
+}
+.form-group {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+section input[type='text'], section input[type='password'] {
+    display: inline-block;
+    width: 100%;
+    line-height: 18px;
+    font-size: 14px;
+    padding: 16px 0;
+    background: #fff;
+    -webkit-appearance: none;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #d6d6d6;
+    text-indent: 20px;
+    outline: none;
+    box-sizing: border-box;
+}
+input
+{
+	font-family: "microsoft yahei", Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", sans-self;
+	font-size: 14px;
+}
+.link-bottom span {
+    color: #d9d9d9;
+}
+/*.error-tips {
+    color: #e13026;
+    font-size: 12px;
+    position: absolute;
+    left: 20px;
+    bottom: 2px;
+}*/
+.login-btn {
+    margin-bottom: 25px;
+    width: 100%;
+}
+.btn {
+    display: block;
+    height: 50px;
+    line-height: 51px;
+    text-align: center;
+    background: #0096ff;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.link-bottom {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 55px;
+}
+.link-bottom a {
+    color: #515151 !important;
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+    color: #414141;
+}
+.separate-line {
+    border-top: 1px solid #e5e5e5;
+    margin: 2px auto;
+    line-height: 1.6em;
+    font-size: 12px;
+    text-align: center;
+}
+.separate-tips {
+    position: relative;
+    top: -0.9em;
+    padding: 0 .75em;
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
+    vertical-align: middle;
+}
+.third-login {
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+    height: 34px;
+    font-size: 12px;
+    position: relative;
+}
+.wechat-btn {
+    display: inline-block;
+    width: 148px;
+    color: inherit;
+    border-radius: 17px;
+    background: #1ebc20 url(../img/wechat_img.png) no-repeat 22px center;
+    background-size: 22px 18px;
+    text-indent: 15px;
+    cursor: pointer;
+}
+footer
+{
+	/*width: 100%;*/
+    font-size: 12px;
+    text-align: center;
+    color: #bbbbbb;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    line-height: 18px;
+}
+.del
+{
+	color: #fff;
+	background-color: #0096ff;
+	border: 0px;
+	cursor: pointer;
+	width: 310px;
+	height: 50px;
+	border-radius: 40px;
+	outline: none;
+}
+.del:hover
+{
+	background: #0074c6;
+}
+
+
+/*登录验证插件*/
+.Validform_checktip{
+	margin-left:8px;
+	line-height:20px;
+	height:20px;
+	overflow:hidden;
+	color:#999;
+	font-size:12px;
+}
+.Validform_right{
+	color:#71b83d;
+	padding-left:20px;
+	background:url(../images/right.png) no-repeat left center;
+}
+.Validform_wrong{
+	color:red;
+	padding-left:20px;
+	white-space:nowrap;
+	background:url(../images/error.png) no-repeat left center;
+}
+.Validform_loading{
+	padding-left:20px;
+	background:url(../images/onLoad.gif) no-repeat left center;
+}
+.Validform_error{
+	background-color:#ffe7e7;
+}
+#Validform_msg{color:#7d8289; font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif; width:280px; -webkit-box-shadow:2px 2px 3px #aaa; -moz-box-shadow:2px 2px 3px #aaa; background:#fff; position:absolute; top:0px; right:50px; z-index:99999; display:none;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');}
+#Validform_msg .iframe{position:absolute; left:0px; top:-1px; z-index:-1;}
+#Validform_msg .Validform_title{line-height:25px; height:25px; text-align:left; font-weight:bold; padding:0 8px; color:#fff; position:relative; background-color:#000;}
+#Validform_msg a.Validform_close:link,#Validform_msg a.Validform_close:visited{line-height:22px; position:absolute; right:8px; top:0px; color:#fff; text-decoration:none;}
+#Validform_msg a.Validform_close:hover{color:#cc0;}
+#Validform_msg .Validform_info{padding:8px;border:1px solid #000; border-top:none; text-align:left;}
+

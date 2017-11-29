@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>订单-出门问问官方商城</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/main-style.css" />
+		<link rel="stylesheet" type="text/css" href="css/index-style.css" />
+		<link rel="stylesheet" type="text/css" href="css/order-submit.css" />
+		<link rel="stylesheet" type="text/css" href="css/shoppingCart.css" />
+		<!--引用字体图标-->
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+	</head>
+
+	<body>
+		<!--header头部-->
+		<div class="header-zt">
+			<div class="container container-zt relative">
+				<div class="log-zt fl">
+					<a href="index.html"><img src="img/spring-yzt.png" /></a>
+				</div>
+				<div class="bar-zt fr">
+					<ul class="nav-zt">
+						<li class="fl">
+							<a class="active-zt" href="index.html">在线商城</a>
+						</li>
+						<li class="fl">
+							<a href="ticwatchs.html">TicwatchS</a>
+						</li>
+						<li class="fl">
+							<a href="ticwatche.html">TicwatchE</a>
+						</li>
+						<li class="fl">
+							<a href="ticwear.html">Ticwear</a>
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!--第二部分-->
+		<div class="box-zt">
+			<div class="container">
+				<div class="second-left-zt fl">
+					<ul class="msg">
+						<li class="msg-con fl">
+							<a href="ticwatchs.html">Ticwatch2</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="ticwatche.html">Ticmirror</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="Allgoods.html">折扣商品</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="Allgoods.html">手表配件</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="Allgoods.html">其他周边</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="Allgoods.html">全部商品</a>
+						</li>
+					</ul>
+				</div>
+				<div class="second-right-zt fr">
+					<div class="fr shop">
+						<a href="shoppingCart.html"><img src="img/shop-zt.png" width="20px" alt="" /></a>
+					</div>
+					<div class="fr man">
+						<a href="login.html"><img src="img/man-zt.png" width="20px" alt="" /></a>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<!--提交订单页面-->
+		<div class="cart-bg cart-bg-padding">
+			<div class="container">
+				<div class="order-title">
+					<h2 class="order-head-title">提交订单</h2>
+				</div>
+				<div id="order-address" class="order-block">
+					<h5 class="font-title-color">
+						<i class="iconfont iconfont-color">&#xe68e;</i>
+						收货信息
+					</h5>
+					<div id="order-address-list" class="cart-font-text-color">
+						<a id="address-addBtn" class="btn btn-primary btn-sm" href="javascript:void(0);">
+							<i class="iconfont">&#xe6b9;</i> 新增收货地址
+						</a>
+						<ul id="adreul" class="order-address-list newadre nosee">
+							<li class="address-item order-address-list-item unlogin" data-id="148019" data-index="0">
+								<div class="checkbox-group">
+									<label for="address-148019" class="adre-select">
+										<span class="radio-btn selected"></span>
+									</label>
+									<input type="radio" name="is_default" id="address-148019">
+								</div>
+								<div class="shipment info">
+									<div class="shipment-receiver yhsd-font-title">
+										<span class="name"> </span>
+										<span class="phone"> </span>
+									</div>
+									<small class="shipment-address yhsd-font-desc">
+										<span class="province"> </span>
+										<span class="city"> </span>
+										<span class="area"> </span>
+										<span class="street"> </span>										 
+									</small>
+								</div>
+								<div class="yhsd-font-desc moren">设为默认地址</div>
+								<div class="yhsd-font-desc edit bianji">编辑</div>
+								<div class="yhsd-font-desc delete">删除</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="order-paying" class="order-block">
+					<div class="">
+						<h5 class="font-title-color">
+						<i class="iconfont iconfont-color">&#xe71c;</i>
+						支付方式
+					</h5>
+					</div>
+					<div class="order-boder-bot">
+						<h4 class="font-title-color">请选择以下支付方式付款</h4>
+						<div class="font-title-color order-payway">
+							支付平台
+							<span class="font-title-color" style="font-size: small;">（大额支付推荐使用支付宝）</span>
+							<ul class="order-pay-mag">
+								<li class="order-pay relative">
+									<i class="yes"></i>
+									<img class="box-show" src="img/payway_01.png" />
+								</li>
+								<li class="order-pay relative">
+									<i class=""></i>
+									<img src="img/payway_03.png" />
+								</li>
+								<li class="order-pay relative">
+									<i class=""></i>
+									<img src="img/payway_05.png" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="order-shopping order-block">
+					<h5 class="font-title-color">
+						<i class="iconfont iconfont-color">&#xe6a2;</i>
+						购物清单
+					</h5>
+					<ul>
+						<li class="order-goods">
+							<div class=" cart-cont-item-product cart-form-background" data-vid="4398904" data-reason="">
+								<div class="img"><img src="img/0005.jpeg" alt="TicwatchE 时尚·摩登白/朋克黑"></div>
+								<div class="name">
+									<a href="Product Details.html" target="_blank" class="order-goods-name">TicwatchE 时尚·摩登白/朋克黑</a>
+								</div>
+								<div class="sku hidden yhsd-font-desc"><span class="edit yhsd-base-iconfont icon-edit"></span></div>
+								<style>
+									.cart-cont-item-product>.sku.active .edit:before {
+										content: "edit";
+										font-family: "Microsoft Yahei", verdana!important;
+									}
+								</style>
+								<div class="order-goods-price cart-font-text-color">&yen;1199×1</div>
+								<div class="order-goods-paying cart-font-text-color">&yen;1199</div>
+							</div>
+						</li>
+					</ul>
+					<div class="fare">
+						配送方式：
+						<span class="shunfeng">顺丰速运-运费￥0</span>
+					</div>
+				</div>
+				<div id="order-message" class="order-block">
+					<div class="order-levewords">
+						<h5 class="font-title-color">
+						<i class="iconfont iconfont-color">&#xe6a8;</i>
+						留言
+					</h5>
+						<div class="relative or-con txt-chang">
+							<div class="little-txt">
+								订单补充说明：
+							</div>
+							<input class="info-input address-info re-val" type="text" value="" />
+						</div>
+					</div>
+				</div>
+				<div class="order-favour fl order-favour-right">
+					<div class="order-coupon order-favour-pad">
+						<div class="font-title-color">
+							<img src="img/youhui.png" /> 优惠券
+						</div>
+						<a id="use-coupon" href="javascript:;">
+							使用优惠券
+						</a>
+					</div>
+				</div>
+				<div class="order-favour fl">
+					<div class="order-reco order-favour-pad">
+						<div class="font-title-color">
+							<img src="img/youhui.png" /> 推荐码
+						</div>
+						<a id="use-recommend" href="javascript:;">
+							使用推荐码
+						</a>
+						<div class="order-recommend">
+							
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div id="order-submitall" class="order-block clearfix">
+					<ul class="detail order-text-right">
+						<li class="order-amount">
+							商品总金额：
+							<span class="value">￥19.9</span>
+						</li>
+						<li class="promote" style="display: none;">
+							活动优惠：
+							<span class="value">-￥0</span>
+						</li>
+						<li class="coupon" style="display: none;">
+							用券优惠：
+							<span class="value">-￥0</span>
+						</li>
+						<li class="ship">
+							运费合计：
+							<span class="value">￥0</span>
+						</li>
+						<li class="order-totle">
+							应付总额：
+							<span class="value total">￥1199</span>
+						</li>
+						<li class="order-all-pad">
+							<a id="order-submitbtn" class="btn btn-lg btn-vital" href="paysuccsess1.html">提交订单</a>
+							<div class="error">请确认收货地址</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--footer尾部-->
+
+		<div class="footer-zt">
+			<div class="container">
+				<div class="foot-one-zt">
+					<ul class="foot-one-zt-con">
+						<li class="foot-one-zt-msg fl">
+							<a href="#"><img src="img/seven.png" width="25px" /></a>
+							<span class="foot-one-zt-msg1">
+								7天无理由退货
+							</span>
+						</li>
+						<li class="foot-one-zt-msg fl">
+							<a href="#"><img src="img/gohome.png" width="25px" /></a>
+							<span class="foot-one-zt-msg1">
+								15天免费换货
+							</span>
+						</li>
+						<li class="foot-one-zt-msg fl">
+							<a href="#"><img src="img/plent.png" width="25px" /></a>
+							<span class="foot-one-zt-msg1">
+								满99顺丰包邮
+							</span>
+						</li>
+						<li class="foot-one-zt-msg fl">
+							<a href="#"><img src="img/man.png" width="25px" /></a>
+							<span class="foot-one-zt-msg1">
+								在线客服
+							</span>
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+
+				<div class="foot-two-zt">
+					<ul class="foot-two-zt-con">
+						<li class="foot-two-zt-msg relative fl">
+							<img class="fl" src="img/weixin.png" />
+							<div class="foot-two-zt-msg1 fr">
+								<div class="msg1">
+									<a href="#">微信公众号</a>
+								</div>
+								<div class="msg2">
+									版本升级、功能更新、优惠活动等讯息第一时间掌握。
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="tan-zt">
+								<img src="img/tan-zt.png" />
+							</div>
+						</li>
+						<li class="foot-two-zt-msg fl">
+							<img class="fl" src="img/weibo.png" />
+							<div class="foot-two-zt-msg1 fr">
+								<div class="msg1">
+									<a href="#">新浪微博</a>
+								</div>
+								<div class="msg2">
+									向全球用户寻求帮助，或分享您的经验。
+								</div>
+							</div>
+							<div class="clear"></div>
+						</li>
+						<li class="foot-two-zt-msg active-zt2 fl">
+							<img class="fl" src="img/wlogo.png" />
+							<div class="foot-two-zt-msg1 fr">
+								<div class="msg1">400-883-8390</div>
+								<div class="msg2">
+									周一至周日 9:00-21:00（仅收市话费）。
+								</div>
+							</div>
+							<div class="clear"></div>
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+
+				<div class="foot-three-zt">
+					<table cellpadding="0" cellspacing="0">
+						<tr>
+							<th>产品</th>
+							<th>帮助</th>
+							<th>媒体</th>
+							<th>开发者</th>
+							<th>出门问问</th>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Ticwatch</a>
+							</td>
+							<td>
+								<a href="#">引导教程</a>
+							</td>
+							<td>
+								<a href="#">公司新闻</a>
+							</td>
+							<td>
+								<a href="#">手表开发者平台</a>
+							</td>
+							<td>
+								<a href="#">关于问问</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Ticwatch2</a>
+							</td>
+							<td>
+								<a href="#">视频引导</a>
+							</td>
+							<td>
+								<a href="#">产品消息</a>
+							</td>
+							<td>
+								<a href="#">TicDesign</a>
+							</td>
+							<td>
+								<a href="#">工作机会</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Ticmirror</a>
+							</td>
+							<td>
+								<a href="#">应用</a>
+							</td>
+							<td>
+								<a href="#">媒体报道</a>
+							</td>
+							<td>
+								<a href="#">AI开放平台</a>
+							</td>
+							<td>
+								<a href="#">联系我们</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">配件</a>
+							</td>
+							<td>
+								<a href="#">售后政策</a>
+							</td>
+							<td>
+								<a href="#">视频</a>
+							</td>
+							<td></td>
+							<td>
+								<a href="#">资料下载</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="foot-four-zt">
+					<span class="foot-four-zt-msg1">
+					Copyright © 2017 Mobvoi Inc. All Rights Reserved. 北京羽扇智信息科技有限公司京ICP备14058077号-1京公网安备11010802023146
+				</span>
+					<span class="foot-four-zt-msg2"><a href="#">服务条款</a></span>
+				</div>
+			</div>
+		</div>
+		<!--新增地址小窗-->
+		<div id="addressbox" class="back-cover nosee" style="z-index: 2;">
+			<div class="box-center facenter">
+				<div class="retext adre-title">
+					<div class="fl">新增收货地址</div>
+					<div class="reclose fr"><img class="re-text-right" src="img/close.png" width="16px" height="16px" /></div>
+					<div class="clear"></div>
+				</div>
+				<form action="" class="demoform">
+					<div class="re-input">
+						<div class="relative person-shou txt-chang">
+							<div class="little-txt">
+								收货人
+								<span> *</span>
+							</div>
+							<input name="shouhuo" class="info-input" type="text" value="" datatype="*" errormsg="收货人不能为空" />
+						</div>
+
+						<div class="connection relative txt-chang adre-display">
+							<div class="little-txt">
+								联系电话
+								<span> *</span>
+							</div>
+							<input name="lianxi" class="info-input info-phone" type="text" value="" datatype="m" errormsg="请填写正确的联系电话" />
+						</div>
+						<div class="adre-di">
+							<select name="province" class="pro-info">
+								<option value="">请选择省份</option>
+								<option value="110000">北京</option>
+								<option value="120000">天津</option>
+								<option value="130000">河北省</option>
+								<option value="140000">山西省</option>
+								<option value="150000">内蒙古自治区</option>
+								<option value="210000">辽宁省</option>
+								<option value="220000">吉林省</option>
+								<option value="230000">黑龙江省</option>
+								<option value="310000">上海</option>
+								<option value="320000">江苏省</option>
+								<option value="330000">浙江省</option>
+								<option value="340000">安徽省</option>
+								<option value="350000">福建省</option>
+								<option value="360000">江西省</option>
+								<option value="370000">山东省</option>
+								<option value="410000">河南省</option>
+								<option value="420000">湖北省</option>
+								<option value="430000">湖南省</option>
+								<option value="440000">广东省</option>
+								<option value="450000">广西壮族自治区</option>
+								<option value="460000">海南省</option>
+								<option value="500000">重庆</option>
+								<option value="510000">四川省</option>
+								<option value="520000">贵州省</option>
+								<option value="530000">云南省</option>
+								<option value="540000">西藏自治区</option>
+								<option value="610000">陕西省</option>
+								<option value="620000">甘肃省</option>
+								<option value="630000">青海省</option>
+								<option value="640000">宁夏回族自治区</option>
+								<option value="650000">新疆维吾尔族自治区</option>
+								<option value="710000">台湾</option>
+								<option value="810000">香港特别行政区</option>
+								<option value="820000">澳门特别行政区</option>
+							</select>
+							<select name="shi" class="pro-info adre-shi nosee">
+								<option value="">请选择市</option>
+								<option value="111000">青岛市</option>
+								<option value="121000">济南市</option>
+								<option value="131000">威海市</option>
+								<option value="141000">烟台市</option>
+							</select>
+							<select name="area" class="pro-info adre-shi nosee">
+								<option value="">请选择地区</option>
+								<option value="111100">黄岛区</option>
+								<option value="121200">城阳区</option>
+								<option value="131300">市南区</option>
+								<option value="141400">李沧区</option>
+							</select>
+						</div>
+						<div class="relative txt-chang relive">
+							<div class="little-txt">
+								收货地址
+								<span> *</span>
+							</div>
+							<input name="shoudi" class="info-input address-info" type="text" value="" datatype="*" errormsg="请填写详细收货地址" />
+						</div>
+						<div class="relative txt-chang posetal">
+							<div class="little-txt">
+								邮政编码
+							</div>
+							<input class="info-input address-info" type="text" value="" />
+						</div>
+						<label for="default-address" class="adre-la cart-font-text-color">
+								<span class="checkbox-btn address-btn"></span> 设为默认地址
+					</label>
+						<input class="nosee" type="checkbox" name="" id="default-address">
+					</div>
+
+					<div class="rebutton">
+						<input class="resty-sub" type="submit" id="adresubmit" value="确定" />
+						<input class="resty-clo" type="button" value="取消" />
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--优惠券小窗-->
+		<div id="fabox" class="back-cover nosee">
+			<div class="box-center facenter">
+				<div class="retext">
+					<div class="fl">使用优惠券</div>
+					<div class="reclose fr"><img class="re-text-right" src="img/close.png" width="16px" height="16px" /></div>
+					<div class="clear"></div>
+				</div>
+				<div class="fa-tab" id="">
+					<ul class="fa-tab-title">
+						<li class="fa-active">优惠券 </li>
+						<li class="fa-short">|</li>
+						<li>使用优惠码</li>
+					</ul>
+					<ul class="fa-tab-content empty">
+						<li>正在加载优惠券…</li>
+						<li></li>
+						<li class="nosee">
+							<div class="relative re-num txt-chang">
+								<div class="little-txt">
+									优惠码
+								</div>
+								<input class="info-input address-info re-val" type="text" value="" />
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="rebutton">
+					<input class="resty-sub" type="submit" id="" value="确定" />
+					<input class="resty-clo" type="button" value="取消" />
+				</div>
+			</div>
+		</div>
+		<!--推荐码小窗-->
+		<div id="rebox" class="back-cover nosee">
+			<div class="box-center recenter">
+				<div class="retext">
+					<div class="fl">使用推荐码</div>
+					<div class="reclose fr"><img class="re-text-right" src="img/close.png" width="16px" height="16px" /></div>
+					<div class="clear"></div>
+				</div>
+				<div class="relative re-num txt-chang">
+					<div class="little-txt">
+						推荐码
+					</div>
+					<input name="rema" class="info-input address-info re-val" type="text" value="" />
+				</div>
+				<div class="rebutton">
+					<input class="resty-sub" type="submit" id="" value="确定" />
+					<input class="resty-clo" type="button" value="取消" />
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/iconfont.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/order-submit.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Validform_v5.3.2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//选择支付方式，点击哪个选择哪个
+			$(".order-boder-bot ul li img").click(function() {
+				var $par = $(this).parents("ul")
+				$par.find("i").removeClass("yes");
+				$par.find("img").removeClass("box-show");
+				$(this).addClass("box-show").siblings("i").addClass("yes");
+			})
+		</script>
+	</body>
+
+</html>

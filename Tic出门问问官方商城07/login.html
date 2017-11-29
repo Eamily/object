@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			body{background: #eee;padding-top: 100px;}
+		</style>
+	</head>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Validform_v5.3.2_min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Validform_v5.3.2.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<div class="wrapper">
+			<header>
+				<img src="img/logo.png" class="logo"/>
+				<h2>问问ID登录</h2>
+			</header>
+			<div class="page" id="formContent">
+				<section class="login_page" id="loginSection">
+					<form action="https://www.souhu.com/" method="post" class="demoform">
+					<div class="form-group">
+						<input type="text" placeholder="邮箱/手机号" name="count" value-type="required" id="teltext" autocomplete="off"  required datatype="e|l" minlength="11" nullmsg="输入不可以为空！" maxlength="11" sucmsg="用户名验证通过"  errormsg="按要求输入账号">
+					</div>
+					<p></p>
+					<div class="form-group">
+						<input type="password" placeholder="密码" class="_password" value-type="password" err-tip="请输入密码" autocomplete="off" id="paswrd" required datatype="z2-4" minlength="8" maxlength="30"  sucmsg="密码可用!">
+					</div>
+					<p></p>
+					
+					<div class="btn login-btn _login-btn" id="login"><input type="submit" value="登陆" id="login1" class="del"/></div>
+					<!--<div class="btn login-btn _login-btn" id="login"><input type="submit" value="登陆" id="login1" class="del"/></div>-->
+					</form>
+					<p class="link-bottom">
+                	<a href="register1.html" class="res-btn _register-btn">注册问问ID</a>
+                	<span>|</span>
+                	<a href="" class="_forget-password">忘记密码?</a>
+            		</p>
+            		<div id="thirdLoginWrapper">
+                	<div class="separate-line">
+                    <span class="separate-tips">其他登录方式</span>
+                	</div>
+                	<div class="third-login">
+                    <span id="wechatLogin" class="wechat-btn">用微信登录</span>
+                	</div>
+            		</div>
+				</section>
+			</div>
+		</div>
+		<footer>			
+   		Copyright © 2017 Mobvoi Inc. All Rights Reserved. 北京羽扇智信息科技有限责任公司 京ICP备14058077号-1
+		</footer>
+	</body>
+	
+	<script>
+		$(".demoform").Validform({
+			//				btnSubmit: "#register",
+			//				btnReset: ".btn_reset",
+			tiptype: 1,
+			//				ignoreHidden: false,
+			ignoreHidden: true,
+			//				tipSweep: true,
+			tipSweep: false,
+			label: ".label",
+			showAllError: false,
+			postonce: true,
+			ajaxPost: true,
+			callback: function(data) {
+				console.log(data)
+				if(data.status) {
+					$.Hidemsg()
+				} else {
+					$.Showmsg(data.message);
+				}
+			},
+			datatype: {
+				"e|l": /^0?(13|15|17|18|14)[0-9]{9}$/|/^\\w+((-\\w+)|(\\.\\w+))*\\@[A-Za-z0-9]+((\\.|-)[A-Za-z0-9]+)*\\.[A-Za-z0-9]+$/,			
+				"x": /^.*[A-Za-z0-9\\w_-]+.*$/,
+//				"*6-20": /^[^\s]{6,20}$/,
+//				"z2-4": /^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/,
+				"username": function(gets, obj, curform, regxp) {
+					//参数gets是获取到的表单元素值，obj为当前表单元素，curform为当前验证的表单，regxp为内置的一些正则表达式的引用;
+					var reg1 = /^0?(13|15|17|18|14)[0-9]{9}$/|/^\\w+((-\\w+)|(\\.\\w+))*\\@[A-Za-z0-9]+((\\.|-)[A-Za-z0-9]+)*\\.[A-Za-z0-9]+$/,
+						reg2 = /^.*[A-Za-z0-9\\w_-]+.*$/;
+
+					if(reg1.test(gets)) {
+						return true;
+					}
+					if(reg2.test(gets)) {
+						return true;
+					}
+					return false;
+
+					//注意return可以返回true 或 false 或 字符串文字，true表示验证通过，返回字符串表示验证失败，字符串作为错误提示显示，返回false则用errmsg或默认的错误提示;
+				},
+				"phone": function() {
+					// 5.0 版本之后，要实现二选一的验证效果，datatype 的名称 不 需要以 "option_" 开头;	
+				}
+			},
+			usePlugin: {
+				swfupload: {},
+				datepicker: {},
+				passwordstrength: {},
+				jqtransform: {
+					selector: "select,input"
+				}
+			},
+			beforeCheck: function(curform) {
+				//在表单提交执行验证之前执行的函数，curform参数是当前表单对象。
+				//这里明确return false的话将不会继续执行验证操作;	
+			},
+			beforeSubmit: function(curform) {
+				//在验证成功后，表单提交前执行的函数，curform参数是当前表单对象。
+				//这里明确return false的话表单将不会提交;	
+			},
+			callback: function(data) {
+				//返回数据data是json对象，{"info":"demo info","status":"y"}
+				//info: 输出提示信息;
+				//status: 返回提交数据的状态,是否提交成功。如可以用"y"表示提交成功，"n"表示提交失败，在ajax_post.php文件返回数据里自定字符，主要用在callback函数里根据该值执行相应的回调操作;
+				//你也可以在ajax_post.php文件返回更多信息在这里获取，进行相应操作；
+				//ajax遇到服务端错误时也会执行回调，这时的data是{ status:**, statusText:**, readyState:**, responseText:** }；
+
+				//这里执行回调操作;
+				//注意：如果不是ajax方式提交表单，传入callback，这时data参数是当前表单对象，回调函数会在表单验证全部通过后执行，然后判断是否提交表单，如果callback里明确return false，则表单不会提交，如果return true或没有return，则会提交表单。
+			}
+		});
+	</script>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			html,
+			body {
+				position: relative;
+				height: 100%;
+			}
+			
+			body {
+				/*外框背景色*/
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				/*中间文字颜色*/
+				color: #000;
+				margin: 0;
+				padding: 0;
+				height: 1000px;
+			}
+			
+			.swiper-container {
+				/*滚动框的大小*/
+				width: 1080px;
+				height: 600px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.swiper-slide {
+				/*滚动框中间字体大小*/
+				text-align: center;
+				font-size: 18px;
+				background: #313131;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			/*.container ul  {
+	
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.05);
+}
+	.container_li:hover img {
+	
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}*/	
+.container_li{
+	overflow: hidden;
+}
+	.container_li:hover {
+	/*图片放大*/
+	-webkit-transform: scale(1.02);
+	-moz-transform: scale(1.02);
+	-ms-transform: scale(1.02);
+	-o-transform: scale(1.02);
+	transform: scale(1.02);
+}		
+		.trans5 {
+	-webkit-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-ms-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+}	
+.container_li:hover {
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+	box-shadow: 0px -1px 11px 0px rgba(0, 0, 0, 1);
+}
+			
+			
+			
+			
+			
+			
+			
+		</style>
+
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/ticwatchs.css" />
+	<link rel="stylesheet" type="text/css" href="css/main-style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index-style.css"/>
+	
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+  
+	<body>
+		
+		<!--header头部-->
+		<div class="header-zt">
+			<div class="container container-zt relative">
+				<div class="log-zt fl">
+					<a href="index.html"><img src="img/spring-yzt.png" /></a>
+				</div>
+				<div class="bar-zt fr">
+					<ul class="nav-zt">
+						<li class="fl">
+							<a  href="index.html">在线商城</a>
+						</li>
+						<li class="fl">
+							<a class="active-zt" href="#">TicwatchS</a>
+						</li>
+						<li class="fl">
+							<a href="ticwatche.html">TicwatchE</a>
+						</li>
+						<li class="fl">
+							<a href="ticwear.html">Ticwear</a>
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!--第二部分-->
+		<div class="box-zt">
+			<div class="container">
+				<div class="second-left-zt fl">
+					<ul class="msg">
+						<li class="msg-con fl">
+							<a href="ticwatche.html">Ticwatch2</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="ticwear.html">Ticmirror</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="Allgoods.html">折扣商品</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="Allgoods.html">手表配件</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="Allgoods.html">其他周边</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="Allgoods.html">全部商品</a>
+						</li>
+					</ul>
+				</div>
+				<div class="second-right-zt fr">
+					<div class="fr shop">
+						<a href="shoppingCart.html"><img src="img/shop-zt.png" width="20px" alt="" /></a>
+					</div>
+					<div class="fr man">
+						<a href="login.html"><img src="img/man-zt.png" width="20px" alt="" /></a>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+
+		<!--玩出色大图片-->
+		<div class="banner">
+
+		</div>
+		<div class="space">
+			<!--三个手表-->
+			<div class="container">
+				<ul>
+					<li class="container_li trans5" >
+						<a href="Product Details.html">
+							<img src="img/ticwatchs-black-watch.jpg" />
+							<p class="se-name">Ticwatch S·峭壁黑</p>
+							<p class="se-func">运动轨迹 | GPS定位 | 智能语音</p>
+							<p class="se-price">
+								<span style="font-size: 14px;">￥</span> 1399
+							</p>
+						</a>
+					</li >
+
+					<li class="container_li trans5">
+						<a href="Product Details.html">
+							<img src="img/ticwatchs-white-watch.jpg" />
+							<p class="se-name">Ticwatch S·阳光白</p>
+							<p class="se-func">心率监测 | 刷表支付 | 蓝牙听歌</p>
+							<p class="se-price">
+								<span>￥</span> 1399
+							</p>
+						</a>
+					</li>
+
+					<li class="container_li trans5 ">
+						<a href="Product Details.html">
+							<img src="img/ticwatchs-yellow-watch.jpg" />
+							<p class="se-name">Ticwatch S·动感黄</p>
+							<p class="se-func">3G独立通讯 | 刷公交地铁 | 海量表盘</p>
+							<p class="se-price">
+								<span>￥</span> 1399
+							</p>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+
+		</div>
+		<!--小目标女生大图片-->
+		<div class="bannertwo">
+			<div class="container bannertwo_box">
+				<div class="sport-pro">
+					<h2 class="title-txt">每天一个小目标</h2>
+					<p class="title-pro">
+						“动动” “锻炼” “步行” 帮你时刻记录。
+						<br>Tic 排行榜,帮你找到运动小伙伴。
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--swipe插件-->
+		<div class="bannerthree">
+
+			<div class="swiper-container swiper-container-vertical">
+				<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+					<div class="swiper-slide swiper-slide-active bg1" style="height: 174px; margin-bottom: 30px;">
+
+						<!--<div class="bg1_img">
+							<img src="img/ticwatchs-slide01-img.png" />
+						</div>
+						<!--wenzi-->
+						<!--<div class="slide-sport">
+							<h2 class="slide-title">为运动而生</h2>
+							<p>模拟运动时身体弧度，更加贴合，
+								<br> 排汗透气槽，佩戴舒适无感。
+							</p>
+						</div>-->
+
+					</div>
+
+					<div class="swiper-slide swiper-slide-next bg2" style="height: 174px; margin-bottom: 30px;"></div>
+
+					<div class="swiper-slide bg3" style="height: 174px; margin-bottom: 30px;"></div>
+
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet">
+				
+			</span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
+					<span class="swiper-pagination-bullet"></span>
+					<span class="swiper-pagination-bullet"></span>
+					<span class="swiper-pagination-bullet"></span>
+					<span class="swiper-pagination-bullet"></span>
+				</div>
+			</div>
+		</div>
+
+		<!--视频内容-->
+		<div class="video-s">
+
+			<img class="start" src="img/ticwatchs-video-img.jpg" />
+			<embed class="video" src="img/TicwatchS.mp4" type="" height="462px" width="1035px" style="display: none;" />
+			<div class="stop">
+				<img src="img/close-w.png" />
+			</div>
+
+		</div>
+		
+		<!--footer尾部-->
+
+		<div class="footer-zt">
+			<div class="container">
+				<div class="foot-one-zt">
+					<ul class="foot-one-zt-con">
+						<li class="foot-one-zt-msg fl">
+							<a href="#"><img src="img/seven.png" width="25px" /></a>
+							<span class="foot-one-zt-msg1">
+								7天无理由退货
+							</span>
+						</li>
+						<li class="foot-one-zt-msg fl">
+							<a href="#"><img src="img/gohome.png" width="25px" /></a>
+							<span class="foot-one-zt-msg1">
+								15天免费换货
+							</span>
+						</li>
+						<li class="foot-one-zt-msg fl">
+							<a href="#"><img src="img/plent.png" width="25px" /></a>
+							<span class="foot-one-zt-msg1">
+								满99顺丰包邮
+							</span>
+						</li>
+						<li class="foot-one-zt-msg fl">
+							<a href="#"><img src="img/man.png" width="25px" /></a>
+							<span class="foot-one-zt-msg1">
+								在线客服
+							</span>
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+
+				<div class="foot-two-zt">
+					<ul class="foot-two-zt-con">
+						<li class="foot-two-zt-msg relative fl">
+							<img class="fl" src="img/weixin.png" />
+							<div class="foot-two-zt-msg1 fr">
+								<div class="msg1">
+									<a href="#">微信公众号</a>
+								</div>
+								<div class="msg2">
+									版本升级、功能更新、优惠活动等讯息第一时间掌握。
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="tan-zt">
+								<img src="img/tan-zt.png" />
+							</div>
+						</li>
+						<li class="foot-two-zt-msg fl">
+							<img class="fl" src="img/weibo.png" />
+							<div class="foot-two-zt-msg1 fr">
+								<div class="msg1">
+									<a href="#">新浪微博</a>
+								</div>
+								<div class="msg2">
+									向全球用户寻求帮助，或分享您的经验。
+								</div>
+							</div>
+							<div class="clear"></div>
+						</li>
+						<li class="foot-two-zt-msg active-zt2 fl">
+							<img class="fl" src="img/wlogo.png" />
+							<div class="foot-two-zt-msg1 fr">
+								<div class="msg1">400-883-8390</div>
+								<div class="msg2">
+									周一至周日 9:00-21:00（仅收市话费）。
+								</div>
+							</div>
+							<div class="clear"></div>
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+
+				<div class="foot-three-zt">
+					<table cellpadding="0" cellspacing="0">
+						<tr>
+							<th>产品</th>
+							<th>帮助</th>
+							<th>媒体</th>
+							<th>开发者</th>
+							<th>出门问问</th>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Ticwatch</a>
+							</td>
+							<td>
+								<a href="#">引导教程</a>
+							</td>
+							<td>
+								<a href="#">公司新闻</a>
+							</td>
+							<td>
+								<a href="#">手表开发者平台</a>
+							</td>
+							<td>
+								<a href="#">关于问问</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Ticwatch2</a>
+							</td>
+							<td>
+								<a href="#">视频引导</a>
+							</td>
+							<td>
+								<a href="#">产品消息</a>
+							</td>
+							<td>
+								<a href="#">TicDesign</a>
+							</td>
+							<td>
+								<a href="#">工作机会</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Ticmirror</a>
+							</td>
+							<td>
+								<a href="#">应用</a>
+							</td>
+							<td>
+								<a href="#">媒体报道</a>
+							</td>
+							<td>
+								<a href="#">AI开放平台</a>
+							</td>
+							<td>
+								<a href="#">联系我们</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">配件</a>
+							</td>
+							<td>
+								<a href="#">售后政策</a>
+							</td>
+							<td>
+								<a href="#">视频</a>
+							</td>
+							<td></td>
+							<td>
+								<a href="#">资料下载</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="foot-four-zt">
+					<span class="foot-four-zt-msg1">
+					Copyright © 2017 Mobvoi Inc. All Rights Reserved. 北京羽扇智信息科技有限公司京ICP备14058077号-1京公网安备11010802023146
+				</span>
+					<span class="foot-four-zt-msg2"><a href="#">服务条款</a></span>
+				</div>
+			</div>
+		</div>
+		
+
+	</body>
+
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			direction: 'vertical',
+			slidesPerView: 1,
+			paginationClickable: true,
+			spaceBetween: 30,
+			mousewheelControl: true,
+			mousewheelReleaseOnEdges: true,
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".start").click(function() {
+				$(".video").css("display", "block"),
+					$(".stop").css("display", "block")
+			})
+			$(".stop").click(function() {
+				$(".video").css("display", "none"),
+					$(".stop").css("display", "none")
+			})
+			$(".stop").hover(function() {
+				$(".stop").css("background-color", "orangered")
+			}, function() {
+				$(".stop").css("background-color", "black")
+			})
+		})
+	</script>
+
+</html>

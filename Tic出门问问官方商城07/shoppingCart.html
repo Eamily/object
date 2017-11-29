@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>购物车-出门问问官方商城</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index-style.css" />
+		<link rel="stylesheet" type="text/css" href="css/main-style.css" />
+		<link rel="stylesheet" type="text/css" href="css/shoppingCart.css" />
+		<link rel="stylesheet" type="text/css" href="css/order-submit.css" />
+	</head>
+
+	<body>
+		<!--header头部-->
+		<div class="header-zt">
+			<div class="container container-zt relative">
+				<div class="log-zt fl">
+					<a href="index.html"><img src="img/spring-yzt.png" /></a>
+				</div>
+				<div class="bar-zt fr">
+					<ul class="nav-zt">
+						<li class="fl">
+							<a class="active-zt" href="index.html">在线商城</a>
+						</li>
+						<li class="fl">
+							<a href="ticwatchs.html">TicwatchS</a>
+						</li>
+						<li class="fl">
+							<a href="ticwatche.html">TicwatchE</a>
+						</li>
+						<li class="fl">
+							<a href="ticwear.html">Ticwear</a>
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!--第二部分-->
+		<div class="box-zt">
+			<div class="container">
+				<div class="second-left-zt fl">
+					<ul class="msg">
+						<li class="msg-con fl">
+							<a href="ticwatchs.html">Ticwatch2</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="ticwatche.html">Ticmirror</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="Allgoods.html">折扣商品</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="Allgoods.html">手表配件</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="Allgoods.html">其他周边</a>
+						</li>
+						<li class="msg-con fl">
+							<a href="Allgoods.html">全部商品</a>
+						</li>
+					</ul>
+				</div>
+				<div class="second-right-zt fr">
+					<div class="fr shop">
+						<a href="shoppingCart.html"><img src="img/shop-zt.png" width="20px" alt="" /></a>
+					</div>
+					<div class="fr man">
+						<a href="login.html"><img src="img/man-zt.png" width="20px" alt="" /></a>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!--购物车-->
+		<div class="cart-bg cart-bg-padding">
+			<div class="container">
+				<!--购物车标题-->
+				<div class="cart-head">
+					<h2 class="cart-head-title">购物车</h2>
+				</div>
+				<!--购物车列表-->
+				<div class="cart-cont cart-main-border">
+					<!--购物车列表表头-->
+					<div class="cart-cont-head cart-main-border cart-form-background">
+						<div class="cart-checked-group">
+							<label for="cart-select-all" class="cart-select-all cart-font-text-color">
+								<span class="checkbox-btn"></span> 全选</label>
+							<input type="checkbox" name="selected-all" id="cart-select-all">
+							<span class="name cart-font-text-color">商品名称</span>
+							<span class="price cart-font-text-color">单价</span>
+							<span class="quantity cart-font-text-color">数量</span>
+							<span class="subtotal cart-font-text-color">小计</span>
+							<span class="operate cart-font-text-color">操作</span>
+						</div>
+					</div>
+					<ul class="cart-cont-list empty" id="cart-cont-list">
+						<!--购物车为空时，中间的大图-->
+						<li class="cart-main-border">
+							<div class="cart-cont-item"><span class="cart-photo"></span>您的购物车还没有商品，快去挑选心爱的商品吧！<br>
+								<a href="Allgoods.html" class="btn btn-primary btn-sm">去逛逛</a>
+							</div>
+						</li>
+						<!--商品列表-->
+						<li class="cart-main-border">
+							<div class="cart-cont-item cart-cont-item-product cart-form-background cart-main-border" data-vid="4398904" data-reason="">
+								<!--复选框-->
+								<div class="checkbox-group">
+									<label for="">
+										<span class="checkbox-btn"></span>
+									</label>
+									<input type="checkbox" name="cancel-reason" value="1">
+								</div>
+								<!--图片-->
+								<div class="img"><img src="img/0005.jpeg" alt="TicwatchE 时尚·摩登白/朋克黑"></div>
+								<!--商品名称，连接到详情页-->
+								<div class="name">
+									<a href="Product Details.html" target="_blank" class="yhsd-font-title">TicwatchE 时尚·摩登白/朋克黑</a>
+								</div>
+								<div class="sku hidden yhsd-font-desc"><span class="edit yhsd-base-iconfont icon-edit"></span></div>
+								<style>
+									.cart-cont-item-product>.sku.active .edit:before {
+										content: "edit";
+										font-family: "Microsoft Yahei", verdana!important;
+									}
+								</style>
+								<!--单价-->
+								<div class="unit-price cart-font-text-color">&yen;1199</div>
+								<!--数量-->
+								<div class="control">
+									<div class="quantity-selector cart-font-text-color">
+										<span class="icon-minus">
+											&lt;
+										</span>
+										<input class="cart-font-text-color cart-kuang" type="text" value="1">
+										<span class="icon-add">
+											&gt;
+										</span>
+									</div>
+								</div>
+								<!--小计-->
+								<div class="price cart-font-text-color">&yen;1199</div>
+								<!--操作-->
+								<div class="delete cart-font-text-color">删除</div>
+							</div>
+						</li>
+						<li class="cart-main-border">
+							<div class="cart-cont-item cart-cont-item-product cart-form-background cart-main-border" data-vid="4421323" data-reason="">
+								<!--复选框-->
+								<div class="checkbox-group">
+									<label for="">
+										<span class="checkbox-btn"></span>
+									</label>
+									<input type="checkbox" name="cancel-reason" value="1">
+								</div>
+								<!--图片-->
+								<div class="img"><img src="img/10001.jpeg" alt="Ticmirror 出门问问智能后视镜"></div>
+								<!--商品名称，连接到详情页-->
+								<div class="name">
+									<a href="Product Details2.html" target="_blank" class="yhsd-font-title">Ticmirror 出门问问智能后视镜</a>
+								</div>
+								<div class="sku hidden yhsd-font-desc"><span class="edit yhsd-base-iconfont icon-edit"></span></div>
+								<style>
+									.cart-cont-item-product>.sku.active .edit:before {
+										content: "edit";
+										font-family: "Microsoft Yahei", verdana!important;
+									}
+								</style>
+								<!--单价-->
+								<div class="unit-price cart-font-text-color">&yen;4999</div>
+								<!--数量-->
+								<div class="control">
+									<div class="quantity-selector cart-font-text-color">
+										<span class="icon-minus">
+											&lt;
+										</span>
+										<input class="cart-font-text-color cart-kuang" type="text" value="1">
+										<span class="icon-add">
+											&gt;
+										</span>
+									</div>
+								</div>
+								<!--小计-->
+								<div class="price cart-font-text-color">&yen;4999</div>
+								<!--操作-->
+								<div class="delete cart-font-text-color">删除</div>
+							</div>
+						</li>
+						<li class="cart-main-border">
+							<div class="cart-cont-item cart-cont-item-product cart-form-background cart-main-border" data-vid="4398904" data-reason="">
+								<!--复选框-->
+								<div class="checkbox-group">
+									<label for="">
+										<span class="checkbox-btn"></span>
+									</label>
+									<input type="checkbox" name="cancel-reason" value="1">
+								</div>
+								<!--图片-->
+								<div class="img"><img src="img/0005.jpeg" alt="时尚·摩登白/朋克黑"></div>
+								<!--商品名称，连接到详情页-->
+								<div class="name">
+									<a href="Product Details.html" target="_blank" class="yhsd-font-title">时尚·摩登白/朋克黑</a>
+								</div>
+								<div class="sku hidden yhsd-font-desc"><span class="edit yhsd-base-iconfont icon-edit"></span></div>
+								<style>
+									.cart-cont-item-product>.sku.active .edit:before {
+										content: "edit";
+										font-family: "Microsoft Yahei", verdana!important;
+									}
+								</style>
+								<!--单价-->
+								<div class="unit-price cart-font-text-color">&yen;199</div>
+								<!--数量-->
+								<div class="control">
+									<div class="quantity-selector cart-font-text-color">
+										<span class="icon-minus">
+											&lt;
+										</span>
+										<input class="cart-font-text-color cart-kuang" type="text" value="1">
+										<span class="icon-add">
+											&gt;
+										</span>
+									</div>
+								</div>
+								<!--小计-->
+								<div class="price cart-font-text-color">&yen;199</div>
+								<!--操作-->
+								<div class="delete cart-font-text-color">删除</div>
+							</div>
+						</li>
+						<li class="cart-main-border">
+							<div class="cart-cont-item cart-cont-item-product cart-form-background cart-main-border" data-vid="4421323" data-reason="">
+								<!--复选框-->
+								<div class="checkbox-group">
+									<label for="">
+										<span class="checkbox-btn"></span>
+									</label>
+									<input type="checkbox" name="cancel-reason" value="1">
+								</div>
+								<!--图片-->
+								<div class="img"><img src="img/10001.jpeg" alt=" 出门问问智能后视镜"></div>
+								<!--商品名称，连接到详情页-->
+								<div class="name">
+									<a href="Product Details2.html" target="_blank" class="yhsd-font-title">出门问问智能后视镜</a>
+								</div>
+								<div class="sku hidden yhsd-font-desc"><span class="edit yhsd-base-iconfont icon-edit"></span></div>
+								<style>
+									.cart-cont-item-product>.sku.active .edit:before {
+										content: "edit";
+										font-family: "Microsoft Yahei", verdana!important;
+									}
+								</style>
+								<!--单价-->
+								<div class="unit-price cart-font-text-color">&yen;99</div>
+								<!--数量-->
+								<div class="control">
+									<div class="quantity-selector cart-font-text-color">
+										<span class="icon-minus">
+											&lt;
+										</span>
+										<input class="cart-font-text-color cart-kuang" type="text" value="1">
+										<span class="icon-add">
+											&gt;
+										</span>
+									</div>
+								</div>
+								<!--小计-->
+								<div class="price cart-font-text-color">&yen;99</div>
+								<!--操作-->
+								<div class="delete cart-font-text-color">删除</div>
+							</div>
+						</li>
+						<!--商品列表的底部结算部分-->
+
+					</ul>
+					<div class="cart-cont-footer" id="cart-cont-footer">
+						<div class="confirm yhsd-form-background yhsd-main-border">
+							<a id="yhsd-cart-submit" href="order-submit.html" class="btn btn-vital btn-lg">确认结算</a>
+							<div class="confirm-submit">已选商品<span class="quantity"></span>件<span class="total">合计（不含运费）：</span><span class="price">&yen;0</span><span class="discount"><small>已优惠：</small>&yen;0</span></div>
+							<div class="confirm-options">
+								<span class="checkbox-group">
+								<label for="footer-select-all" class="cart-select-all cart-font-text-color">
+									<span class="checkbox-btn"></span> 全选</label>
+								<input type="checkbox" name="footer-select-all" id="footer-select-all">
+								</span>
+								<span id="yhsd-cart-delete" class="cart-font-text-color">
+								删除
+							</span>
+								<!--<span id="yhsd-cart-remove" class="cart-font-text-color">
+									清除下架商品
+								</span>-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--删除商品的确认窗口-->
+		<div id="delbox" class="back-cover nosee">
+			<div class="box-center delegoods">
+				<div class="retext">
+					<div class="fl">删除商品</div>
+					<div class="reclose fr"><img class="re-text-right" src="img/close.png" width="16px" height="16px" /></div>
+					<div class="clear"></div>
+				</div>
+				<div class="dele-text">
+					<p>确定要把选中的商品移出购物车吗？</p>
+				</div>
+				<div class="rebutton">
+					<input class="resty-sub" type="submit" id="" value="确定" />
+					<input class="resty-clo" type="button" value="取消" />
+				</div>
+			</div>
+		</div>
+		<!--footer尾部-->
+
+		<div class="footer-zt">
+			<div class="container">
+				<div class="foot-one-zt">
+					<ul class="foot-one-zt-con">
+						<li class="foot-one-zt-msg fl">
+							<a href="#"><img src="img/seven.png" width="25px" /></a>
+							<span class="foot-one-zt-msg1">
+								7天无理由退货
+							</span>
+						</li>
+						<li class="foot-one-zt-msg fl">
+							<a href="#"><img src="img/gohome.png" width="25px" /></a>
+							<span class="foot-one-zt-msg1">
+								15天免费换货
+							</span>
+						</li>
+						<li class="foot-one-zt-msg fl">
+							<a href="#"><img src="img/plent.png" width="25px" /></a>
+							<span class="foot-one-zt-msg1">
+								满99顺丰包邮
+							</span>
+						</li>
+						<li class="foot-one-zt-msg fl">
+							<a href="#"><img src="img/man.png" width="25px" /></a>
+							<span class="foot-one-zt-msg1">
+								在线客服
+							</span>
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+
+				<div class="foot-two-zt">
+					<ul class="foot-two-zt-con">
+						<li class="foot-two-zt-msg relative fl">
+							<img class="fl" src="img/weixin.png" />
+							<div class="foot-two-zt-msg1 fr">
+								<div class="msg1">
+									<a href="#">微信公众号</a>
+								</div>
+								<div class="msg2">
+									版本升级、功能更新、优惠活动等讯息第一时间掌握。
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="tan-zt">
+								<img src="img/tan-zt.png" />
+							</div>
+						</li>
+						<li class="foot-two-zt-msg fl">
+							<img class="fl" src="img/weibo.png" />
+							<div class="foot-two-zt-msg1 fr">
+								<div class="msg1">
+									<a href="#">新浪微博</a>
+								</div>
+								<div class="msg2">
+									向全球用户寻求帮助，或分享您的经验。
+								</div>
+							</div>
+							<div class="clear"></div>
+						</li>
+						<li class="foot-two-zt-msg active-zt2 fl">
+							<img class="fl" src="img/wlogo.png" />
+							<div class="foot-two-zt-msg1 fr">
+								<div class="msg1">400-883-8390</div>
+								<div class="msg2">
+									周一至周日 9:00-21:00（仅收市话费）。
+								</div>
+							</div>
+							<div class="clear"></div>
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+
+				<div class="foot-three-zt">
+					<table cellpadding="0" cellspacing="0">
+						<tr>
+							<th>产品</th>
+							<th>帮助</th>
+							<th>媒体</th>
+							<th>开发者</th>
+							<th>出门问问</th>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Ticwatch</a>
+							</td>
+							<td>
+								<a href="#">引导教程</a>
+							</td>
+							<td>
+								<a href="#">公司新闻</a>
+							</td>
+							<td>
+								<a href="#">手表开发者平台</a>
+							</td>
+							<td>
+								<a href="#">关于问问</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Ticwatch2</a>
+							</td>
+							<td>
+								<a href="#">视频引导</a>
+							</td>
+							<td>
+								<a href="#">产品消息</a>
+							</td>
+							<td>
+								<a href="#">TicDesign</a>
+							</td>
+							<td>
+								<a href="#">工作机会</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Ticmirror</a>
+							</td>
+							<td>
+								<a href="#">应用</a>
+							</td>
+							<td>
+								<a href="#">媒体报道</a>
+							</td>
+							<td>
+								<a href="#">AI开放平台</a>
+							</td>
+							<td>
+								<a href="#">联系我们</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">配件</a>
+							</td>
+							<td>
+								<a href="#">售后政策</a>
+							</td>
+							<td>
+								<a href="#">视频</a>
+							</td>
+							<td></td>
+							<td>
+								<a href="#">资料下载</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="foot-four-zt">
+					<span class="foot-four-zt-msg1">
+					Copyright © 2017 Mobvoi Inc. All Rights Reserved. 北京羽扇智信息科技有限公司京ICP备14058077号-1京公网安备11010802023146
+				</span>
+					<span class="foot-four-zt-msg2"><a href="#">服务条款</a></span>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/shoppingCart.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var $cartItemA = $("#cart-cont-list li .cart-cont-item a");
+				$cartItemA.hover(function() {
+					$(this).addClass("white-cover");
+				}, function() {
+					$(this).removeClass("white-cover");
+				})
+				//当购物车中有商品时执行
+				$("#cart-cont-list li").eq(0).hide();
+				$("#cart-cont-list").removeClass("empty");
+			})
+		</script>
+	</body>
+
+</html>

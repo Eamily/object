@@ -1,0 +1,623 @@
+@charset "utf-8";
+/*-----------------字体图片---------------*/
+
+@font-face {
+	font-family: 'iconfont';
+	src: url('../fozt/iconfont.eot');
+	src: url('../fozt/iconfont.eot?#iefix') format('embedded-opentype'), url('../fozt/iconfont.woff') format('woff'), url('../fozt/iconfont.ttf') format('truetype'), url('../fozt/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 20px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+	color: white;
+	margin-left: -220px;
+}
+
+
+/*-----------------字体图片---------------*/
+
+
+/*----------------css3动画----------------*/
+
+.trans3 {
+	-webkit-transition: all 0.4s ease-in;
+	-moz-transition: all 0.4s ease-in;
+	-ms-transition: all 0.4s ease-in;
+	-o-transition: all 0.4s ease-in;
+	transition: all 0.4s ease-in;
+}
+
+.trans5 {
+	-webkit-transition: all 1s ease-in;
+	-moz-transition: all 1s ease-in;
+	-ms-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+}
+
+.trans2 {
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+
+/*----------------css3动画----------------*/
+
+
+/*----------------商品层级导航栏--------------*/
+
+.body1 {
+	background-color: #f6f6f6;
+}
+
+.classify_one {
+	margin-bottom: 14px;
+}
+
+.classify_two {
+	font-size: 15px;
+	color: #666666;
+	margin-top: 40px;
+}
+
+.classify_two a {
+	font-size: 15px;
+	color: #666666;
+}
+
+.classify_two a:hover {
+	font-size: 15px;
+	color: #879ba5;
+}
+
+.classify_three {
+	margin-top: 40px;
+	font-size: 16px;
+	color: #d7cdca;
+}
+
+.classify_four {
+	margin-top: 40px;
+	font-size: 15px;
+	color: #d2caca;
+	cursor: not-allowed;
+}
+
+.Line {
+	height: 1px;
+	background-color: #ebe6e6;
+}
+
+
+/*返回顶部*/
+
+.Return {
+	width: 50px;
+	height: 40px;
+	text-align: center;
+	line-height: 19px;
+	position: fixed;
+	bottom: 200px;
+	right: 20px;
+	background-color: #EEEEEE;
+}
+
+.Return a:hover {
+	color: #666666;
+}
+
+
+/*--------------商品层级导航栏完成--------------*/
+
+
+/*--------------商品规格介绍------------------*/
+
+
+/*-------------------右边部分----------------*/
+
+._info_one {
+	color: #666666;
+	font-size: 19px;
+	margin-top: 31px;
+}
+
+._info_two {
+	color: #999999;
+	font-size: 13px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+._info_three {
+	width: 90px;
+	height: 21px;
+	color: #444444;
+	background-color: #ffe117;
+	padding: 5px 5px 0px 10px;
+	margin-bottom: 30px;
+}
+
+._info_four {
+	font-size: 14px;
+	color: #f05156;
+	margin-bottom: 25px;
+}
+
+._info_four_one {
+	font-size: 20px;
+	color: #f05156;
+}
+
+.col_one {
+	margin-bottom: 50px;
+}
+
+.col {
+	font-size: 15px;
+	color: #414141;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.col_one_one {
+	width: 50px;
+	height: 15px;
+	padding: 6px 1px 9px 10px;
+	font-size: 13px;
+	color: #333333;
+	border: 2px solid #a8a4a4;
+	border-radius: 3px;
+}
+
+.col_one_one:hover {
+	width: 50px;
+	height: 15px;
+	padding: 6px 1px 9px 10px;
+	font-size: 13px;
+	color: #a7a4a4;
+	border: 2px solid #ef4043;
+	border-radius: 3px;
+	cursor: default;
+}
+
+.col_one_two {
+	width: 50px;
+	height: 15px;
+	padding: 6px 1px 9px 10px;
+	font-size: 13px;
+	color: #666666;
+	border: 2px solid #a8a4a4;
+	border-radius: 3px;
+	margin-left: 10px;
+}
+
+.col_one_two:hover {
+	width: 50px;
+	height: 15px;
+	padding: 6px 1px 9px 10px;
+	font-size: 13px;
+	color: #a7a4a4;
+	border: 2px solid #ef4043;
+	border-radius: 3px;
+	margin-left: 10px;
+	cursor: default;
+}
+
+.Number {
+	font-size: 14px;
+	color: #414141;
+	margin-bottom: 35px;
+}
+
+.Number_one {
+	margin-bottom: 38px;
+}
+
+.Number_one_one {
+	width: 20px;
+	height: 20px;
+	font-size: 15px;
+	text-align: center;
+	background-color: #eeeeee;
+	margin-top: 4px;
+	cursor: pointer;
+	-moz-user-select: none;
+	/*火狐*/
+	-webkit-user-select: none;
+	/*webkit浏览器*/
+	-ms-user-select: none;
+	/*IE10*/
+}
+
+.Number_one_one a {
+	font-size: 15px;
+}
+
+.Number_one_one a:hover {
+	font-size: 15px;
+	color: #666666;
+}
+
+.Number_one_two {
+	width: 37px;
+	height: 37px;
+	border: 1px solid #ebe6e6;
+	border-radius: 7px;
+	margin-top: -5px;
+	font-size: 14px;
+	color: #555555;
+	text-align: center;
+}
+
+.Number_one_three {
+	width: 20px;
+	height: 20px;
+	font-size: 15px;
+	text-align: center;
+	background-color: #eeeeee;
+	margin-top: 4px;
+	cursor: pointer;
+	-moz-user-select: none;
+	/*火狐*/
+	-webkit-user-select: none;
+	/*webkit浏览器*/
+	-ms-user-select: none;
+	/*IE10*/
+}
+
+.Number_one_three a {
+	font-size: 15px;
+}
+
+.Number_one_three a:hover {
+	font-size: 15px;
+	color: #666666;
+}
+
+._btn {
+	width: 280px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 3px;
+	background-color: #ef4043;
+	border: 0px;
+	font-size: 18px;
+	color: white;
+	outline: 0;
+	cursor: pointer;
+}
+
+._btn_two {
+	width: 277px;
+	height: 50px;
+	background-color: white;
+	border-radius: 3px;
+	border-left: 2px solid #ebe6e6;
+	border-right: 2px solid #ebe6e6;
+	border-bottom: 2px solid #ebe6e6;
+}
+
+
+/*跳转结算按钮部分*/
+
+._btn_two {
+	display: none;
+}
+
+._btn_two_one {
+	font-size: 15px;
+	color: #666666;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+._btn_two_two {
+	width: 110px;
+	height: 30px;
+	background-color: #ef4043;
+	color: white;
+	border: 0px;
+	border-radius: 3px;
+	font-size: 13.5px;
+	margin-left: 10px;
+	margin-top: 10px;
+	outline: 0;
+	cursor: pointer;
+}
+
+._btn_two_three {
+	font-size: 14px;
+	margin-left: 15px;
+	margin-top: 17px;
+	cursor: pointer;
+}
+
+._btn_two_three a {
+	color: #879ba5;
+}
+
+._btn_two_three a:hover {
+	color: #666666;
+}
+
+
+/*--------------右边部分完成-----------------*/
+
+
+/*--------------商品详情部分----------------*/
+
+
+/*详情分界线部分*/
+
+.details_top_one {
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.details_top_one_one {
+	color: #444444;
+	font-size: 19px;
+	padding-bottom: 5px;
+	border-bottom: 3px solid #bcbcbc;
+}
+
+.details_top_one_two {
+	margin-top: 5px;
+}
+
+.details_top_one_three {
+	margin-top: 5px;
+}
+
+
+/*详情分界线部分完成*/
+
+
+/*图片介绍页*/
+
+._p {
+	margin-left: 50px;
+}
+
+._p_one {
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+._p .img {
+    transform: translate3d(0, 0, 150px);
+    -ms-transform: translate3d(0, 150px, 0);
+    -webkit-transform: translate3d(0, 150px, 0);
+    -o-transform: translate3d(0, 150px, 0);
+    -moz-transform: translate3d(0, 150px, 0);
+    opacity: 0;
+    transition: transform 1s ease 0s, opacity 1s ease 0s;
+    -moz-transition: -moz-transform 1s ease 0s, opacity 1s ease 0s;
+    -webkit-transition: -webkit-transform 1s ease 0s, opacity 1s ease 0s;
+    -o-transition: -o-transform 1s ease 0s, opacity 1s ease 0s;
+    -ms-transition: -ms-transform 1s ease 0s, opacity 1s ease 0s;
+}
+/*图片介绍完成*/
+
+
+/*同类推荐部分*/
+
+.Recommend_01 {
+	height: 330px;
+}
+
+.Recommend {
+	margin-left: 25px;
+	margin-bottom: 70px;
+	height: 330px;
+}
+
+.Recommend_one img {
+	width: 250.55px;
+	height: 250.55px;
+}
+
+.Recommend_two {
+	color: #444444;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 13px;
+}
+
+.Recommend_three {
+	color: #f05156;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 8px;
+}
+
+
+/*返回底部*/
+
+.Return01 {
+	width: 50px;
+	height: 40px;
+	text-align: center;
+	line-height: 19px;
+	position: fixed;
+	bottom: 150px;
+	right: 20px;
+	background-color: #EEEEEE;
+}
+
+.Return01 a:hover {
+	color: #666666;
+}
+
+
+/*返回底部完成*/
+
+
+/*同类推荐部分完成*/
+
+
+/*--------------商品详情部分完成----------------*/
+
+
+/*--------------推荐商品的css3动画效果----------*/
+
+.Recommend_01:hover {
+	-webkit-box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+.Recommend:hover {
+	-webkit-box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+.Recommend_01 a .Recommend_one:hover img {
+	-webkit-transform: scale(1.07);
+	-moz-transform: scale(1.07);
+	-ms-transform: scale(1.07);
+	-o-transform: scale(1.07);
+	transform: scale(1.07);
+}
+
+.Recommend a .Recommend_one:hover img {
+	-webkit-transform: scale(1.07);
+	-moz-transform: scale(1.07);
+	-ms-transform: scale(1.07);
+	-o-transform: scale(1.07);
+	transform: scale(1.07);
+}
+
+
+/*------------推荐商品的css3动画效果完成--------*/
+
+
+/*-------------------隐藏的导航-----------------*/
+
+.Eggs {
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	display: none;
+}
+
+.logo {
+	margin-top: 17px;
+}
+
+._word {
+	margin-top: 15px;
+}
+
+._word_one {
+	font-size: 15px;
+	color: #333333;
+	margin-left: 40px;
+	width: 96px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+
+._word_two {
+	font-size: 15px;
+	color: #333333;
+	margin-left: 40px;
+	width: 96px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	background-color: #EEEEEE;
+}
+
+._word_three {
+	font-size: 15px;
+	color: #333333;
+	margin-left: 40px;
+	width: 96px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+
+._word_four {
+	font-size: 15px;
+	color: #333333;
+	margin-left: 40px;
+	width: 96px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+
+.buy {
+	font-size: 17px;
+	background-color: #ef4043;
+	border: 0px;
+	width: 120px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+}
+
+.buy:hover {
+	font-size: 17px;
+	background-color: #cd3739;
+	border: 0px;
+	width: 120px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+}
+
+.buy a {
+	color: white;
+}
+
+.buy a:hover {
+	color: white;
+}
+
+.buy2 {
+	font-size: 17px;
+	background-color: #EEEEEE;
+	border: 0px;
+	width: 120px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+}
+
+.buy2:hover {
+	font-size: 17px;
+	background-color: #dedcdc;
+	border: 0px;
+	width: 120px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+}
+
+.buy2 a {
+	color: #666666;
+}
+
+.buy2 a:hover {
+	color: #666666;
+}
+
+
+/*---------------隐藏的导航-----------------*/

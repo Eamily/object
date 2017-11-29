@@ -1,0 +1,596 @@
+@charset "utf-8";
+
+/*背景色*/
+
+.cart-bg {
+	background-color: #fff;
+}
+
+/*购物车表头*/
+
+.cart-head-title {
+	font-size: 15px;
+	color: rgb(51, 51, 51);
+	margin: 0px 0px 6px;
+}
+
+
+/*复选框*/
+
+.checkbox-btn {
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: -3px;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #eaeaea;
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+.selected {
+	background: url(../img/duihao.png) no-repeat;
+}
+
+.cart-checked-group input[type=checkbox] {
+	display: none;
+}
+
+
+/*购物车内容-边框*/
+
+.cart-cont {
+	border-width: 1px 1px 0;
+	border-style: solid;
+	border-radius: 3px;
+}
+
+
+/*购物车边框*/
+
+.cart-main-border {
+	border-color: #ddd
+}
+
+
+/*购物列表背景色*/
+
+.cart-form-background {
+	background-color: #fff
+}
+
+.cart-cont-head {
+	border-radius: 3px;
+	padding: 5px 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+
+/*表头字体颜色*/
+
+.cart-font-text-color {
+	color: #666;
+}
+
+
+/*全选字体大小*/
+
+.cart-check-all-text {
+	font-size: 12px;
+}
+
+.cart-checked-group>span {
+	font-size: 12px;
+	height: 18px;
+	line-height: 18px;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.cart-checked-group input.checkbox-btn {
+	margin-right: 12px;
+	margin-top: -2px;
+	background-color: #FFFFFF;
+}
+
+.cart-checked-group span.name {
+	margin-left: 10px;
+}
+
+.cart-checked-group span.price {
+	margin-left: 150px;
+}
+
+.cart-checked-group span.quantity {
+	margin-left: 438px;
+}
+
+.cart-checked-group span.subtotal {
+	margin-left: 85px;
+}
+
+.cart-checked-group span.operate {
+	width: 30px;
+}
+
+.cart-cont-list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0
+}
+
+.cart-cont-list li {
+	border-bottom-width: 1px;
+	border-bottom-style: solid
+}
+
+.cart-cont-list.empty .cart-cont-item {
+	color: #999;
+	text-align: center;
+	font-size: 12px;
+}
+
+.cart-cont-list.empty .cart-cont-item .cart-photo {
+	display: block;
+	height: 120px;
+	width: 150px;
+	margin: 116px auto 20px;
+	background: url(../img/cart.png) no-repeat center;
+}
+
+.cart-cont-list.empty .cart-cont-item:before {
+	content: "";
+}
+
+.cart-cont-list.empty .cart-cont-item .btn {
+	margin-top: 20px
+}
+
+.cart-cont-item {
+	border-top-width: 1px;
+	border-top-style: solid
+}
+
+.btn {
+	display: inline-block;
+	border-radius: 3px;
+	border: 1px solid;
+	transition: all .3s;
+	vertical-align: middle;
+	text-decoration: none;
+	text-align: center;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+.btn-primary {
+	background-color: #ef4043;
+	color: #ffffff;
+	border: none;
+}
+
+.btn-sm {
+	font-size: 12px;
+	padding: 0 20px;
+	height: 26px;
+	line-height: 24px;
+}
+
+.btn-vital {
+	color: #fff;
+	background: #f44;
+	border-color: #f44
+}
+
+.btn-lg {
+	font-size: 18px;
+	height: 48px;
+	line-height: 46px;
+	padding: 0 60px
+}
+
+.cart-cont-list li a.btn-sm {
+	color: #FFFFFF;
+}
+
+.white-cover {
+	opacity: .8;
+}
+
+.checkbox-group input[type=radio],
+.checkbox-group input[type=checkbox] {
+	display: none
+}
+
+.yhsd-font-desc {
+	color: #999
+}
+
+.quantity-selector {
+	display: inline-block;
+	background: #fff;
+	border-radius: 3px;
+	border: 1px solid #ddd
+}
+
+.quantity-selector>input {
+	border: none;
+	text-align: center;
+	width: 38px;
+	height: 24px
+}
+
+.quantity-selector>span {
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+	padding: 0 4px;
+	cursor: pointer
+}
+
+.quantity-selector>span.disabled {
+	color: #ddd
+}
+
+.quantity-selector.disabled {
+	border-color: #ddd;
+	color: #bbb
+}
+.cart-cont-item-product
+{
+	padding: 0px 0px 0px 18px;
+}
+
+.cart-cont-item-product>div {
+	padding: 20px 0;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1.5
+}
+.cart-cont-item-product:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 38px;
+	border-left: 1px dashed #d5d5d5;
+	height: 48px
+}
+
+.cart-cont-item-product:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 38px;
+	border-left: 1px dashed #d5d5d5;
+	height: 38px
+}
+
+.cart-cont-item-product:first-child:before,
+.cart-cont-item-product:last-child:after {
+	display: none
+}
+
+.cart-cont-item-product>.checkbox-group {
+	padding-top: 24px;
+	font-size: 12px;
+	width: 24px
+}
+
+.cart-cont-item-product>.img {
+	text-align: center;
+	background: #fff;
+	padding: 0;
+	margin: 20px 0 20px 8px;
+	width: 60px;
+	height: 60px
+}
+
+.cart-cont-item-product>.img:before {
+	content: "";
+	vertical-align: middle;
+	display: inline-block;
+	width: 0;
+	height: 60px
+}
+
+.cart-cont-item-product>.img img {
+	max-width: 60px;
+	max-height: 60px;
+	vertical-align: middle;
+}
+
+.cart-cont-item-product>.name {
+	width: 121px;
+	padding-right: 38px;
+	padding-left: 12px;
+	font-size: 12px;
+	vertical-align: top;
+}
+
+.cart-cont-item-product>.name a {
+	text-decoration: none;
+}
+
+.cart-cont-item-product>.sku {
+	padding: 20px 10px;
+	color: #999;
+	width: 82px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	line-height: 1.7;
+	font-size: 12px;
+	cursor: pointer;
+	height: 40px;
+	border-left: 1px dashed transparent;
+	border-right: 1px dashed transparent
+}
+
+.cart-cont-item-product>.sku.hidden {
+	/*元素是否可见*/
+	visibility: hidden;
+}
+
+.cart-cont-item-product>.sku .edit {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	background: #ddd;
+	line-height: 18px;
+	text-align: center;
+	top: 2px;
+	color: #fff;
+	right: 2px;
+	cursor: pointer;
+	font-size: 12px;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+	display: none
+}
+
+.cart-cont-item-product>.sku.hover {
+	border-color: #ddd
+}
+
+.cart-cont-item-product>.sku.hover .edit {
+	display: block
+}
+
+.cart-cont-item-product>.sku.active {
+	border-color: #48e;
+	color: #48e;
+	background: #f5f9fe
+}
+
+.cart-cont-item-product>.sku.active .edit {
+	width: 42px;
+	background: #48e
+}
+
+.cart-cont-item-product>.unit-price {
+	font-size: 12px;
+	width: 100px;
+	margin-left: 24px
+}
+
+.cart-cont-item-product>.control {
+	font-size: 12px;
+	width: 144px
+}
+
+.cart-cont-item-product>.price {
+	font-size: 12px;
+	width: 116px;
+	text-align: left
+}
+
+.cart-cont-item-product>.delete {
+	font-size: 12px;
+	cursor: pointer;
+	text-align: left
+}
+
+.cart-cont-item-product.selected {
+	/*选中商品后，背景色变成粉色*/
+	background: #fffbea
+}
+
+.cart-cont-item-product.unsell {
+	background: #f4f4f4;
+	color: #a3a3a3
+}
+
+.cart-cont-item-product.unsell a {
+	color: #a3a3a3
+}
+
+.cart-cont-item-product.unsell .quantity-selector input,
+.cart-cont-item-product.unsell .quantity-selector span {
+	color: #a3a3a3;
+	cursor: not-allowed;
+	outline: 0
+}
+
+
+.cart-cont-item-product>.unit-price {
+	font-size: 12px;
+	width: 100px;
+	margin-left: 24px
+}
+
+.cart-cont-item-product>.delete {
+	font-size: 12px;
+	cursor: pointer;
+	text-align: left
+}
+
+.cart-cont-item-product.unsell .quantity-selector input,
+.cart-cont-item-product.unsell .quantity-selector span {
+	color: #a3a3a3;
+	cursor: not-allowed;
+	outline: 0
+}
+
+
+/*数量变化*/
+
+#content_for_layout .cont .cart-cont .cart-cont-list .control .quantity-selector span {
+	float: left;
+	font-family: "黑体"!important;
+	font-size: 10px;
+	display: block;
+	height: 20px;
+	width: 20px;
+	line-height: 22px;
+	text-align: center;
+	font-weight: 700;
+	background-color: #eee;
+	margin-top: 10px;
+}
+
+.quantity-selector>span {
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+	padding: 0 4px;
+	cursor: pointer;
+}
+
+.cart-kuang {
+	padding: 3px;
+	font-size: 16px !important;
+	border-left: 1px solid #D6D6D6 !important;
+	border-right: 1px solid #D6D6D6 !important;
+}
+
+
+/*数量变化<*/
+
+.icon-minus,
+.icon-add {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	font-size: 16px !important;
+}
+
+
+/*列表的底部*/
+
+
+/*fixed用于将结算部分固定在最底部*/
+
+.cart-cont-footer .confirm.fixed {
+	position: fixed;
+	bottom: 0;
+	margin-left: -1px;
+	width: 1058px;
+	box-shadow: 0 -1px 10px 0 #ddd;
+	border-width: 1px;
+}
+
+.cart-cont-footer .confirm {
+	padding: 15px 20px;
+	font-size: 12px;
+}
+
+.cart-cont-footer .discounts {
+	font-size: 12px;
+	overflow: hidden;
+	border-width: 1px 0;
+	border-style: solid;
+	padding: 0 20px;
+	line-height: 24px;
+	margin-top: 10px;
+}
+
+.cart-cont-footer .discounts .name {
+	font-weight: 700;
+	padding: 0 4px;
+}
+
+.cart-cont-footer .confirm>.btn {
+	float: right
+}
+
+.cart-cont-footer .confirm .checkbox-btn {
+	margin-right: 10px
+}
+
+.cart-cont-footer .confirm-options span {
+	line-height: 48px;
+	margin-right: 32px;
+	cursor: pointer
+}
+
+.cart-cont-footer .confirm-submit {
+	text-align: right;
+	float: right;
+	margin-right: 20px;
+	margin-top: -10px
+}
+
+.cart-cont-footer .confirm-submit .quantity {
+	color: #f44;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 0 4px;
+	line-height: 48px
+}
+
+.cart-cont-footer .confirm-submit .total {
+	margin-left: 12px;
+	padding-bottom: 10px
+}
+
+.cart-cont-footer .confirm-submit .discount {
+	margin-right: 8px;
+	color: #666;
+	font-size: 16px;
+	display: block;
+	margin-top: -10px
+}
+
+.cart-cont-footer .confirm-submit .discount small {
+	font-size: 12px
+}
+
+.cart-cont-footer .confirm-submit .price {
+	font-size: 24px;
+	font-weight: 700;
+	margin-right: 6px;
+	color: #f44;
+	line-height: 18px
+}
+
+
+/*确认结算*/
+
+.btn-vital {
+	color: #fff;
+	background: #ef4043;
+	border-color: #ef4043;
+}
+
+.btn-lg {
+	font-size: 14px;
+	height: 32px;
+	line-height: 26px;
+	padding: 0 20px
+}
+
+.confirm a.btn-lg {
+	color: #fff;
+}
+
+
+/*结算部分背景色和边框颜色*/
+
+.yhsd-form-background {
+	background-color: #fff
+}
+
+.yhsd-main-border {
+	border-color: #ddd
+}

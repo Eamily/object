@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/main-style.css" />
+		<link rel="stylesheet" type="text/css" href="css/waite.css" />
+
+	</head>
+
+	<body>
+		<!--hearder-->
+		<div class="header">
+			<div class="container">
+				<span class="tip2 fr">常见问题</span><span class="tip1 fr">你好，欢迎使用支付宝付款！</span>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="header2">
+			<div class="container">
+				<div class="box-zt">
+					<div class="header2-tip1 fl">
+						<img src="img/T1HHFgXXVeXXXXXXXX.png" />
+					</div>
+					<div class="header2-tip2 fl">我的收银台</div>
+					<div class="clear"></div>
+				</div>
+
+			</div>
+		</div>
+		<div class="container relative">
+
+			<div class="header3" id="header3">
+				<div class="container">
+					<div class="header3-left fl">
+						<div class="header3-tip1 ">正在使用即时到账交易
+							<a href="#" class="star relative">
+								<div class="tip-small">
+									<img src="img/small-tip.png" />
+								</div>[?]</a> 交易将在2小时后关闭，请及时付款！</div>
+						<div class="header3-tip2">网站订单201709027686206793</div>
+						<ul class="header3-tip3">
+							<li class="tip3-bar">
+								收款方：北京羽扇智信息科技有限公司
+							</li>
+							<li class="tip3-bar">
+								订单号： 201709027686419863
+							</li>
+							<li class="tip3-bar">
+								商品名称： 网站订单201709027686419863
+							</li>
+							<li class="tip3-bar">
+								商品描述： 支付金额1509.0
+							</li>
+							<li class="tip3-bar">
+								交易金额： 1509.00
+							</li>
+						</ul>
+					</div>
+					<div class="header3-right fr" id="maoyeye"><span>1509.00</span>元 </div>
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<!--header4-->
+			<div class="header4">
+
+				<div class="container container4 relative">
+					<!--切换-->
+
+					<div class="qiehuan">
+						<a href="paysuccsess2.html">
+							<img src="img/jamp.png" />
+						</a>
+					</div>
+
+					<div class="alipayoffer">
+						<div class="alipayoffer1">扫一扫付款（元）</div>
+						<div class="alipayoffer2">1409.00</div>
+					</div>
+					<div class="saoyisao relative">
+						<div class="circletip" id="circletip">
+							<div class="circletip1" id="circletip1">
+								<img id="circle1" width="203px" height="179px" src="img/circle1.png" />
+							</div>
+							<div class="circletip2" id="circletip2">
+								<img id="circle2" width="203px" height="179px" src="img/circle2.png" />
+							</div>
+						</div>
+						<img src="img/alipay.png" />
+					</div>
+					<div class="download">
+						<a href="https://excashier.alipay.com/standard/auth.htm?payOrderId=bc6becc5a42b484e9bc105de80888630.80">
+							首次使用请下载手机支付宝
+						</a>
+					</div>
+
+					<div class="offer-message" id="offer">
+						<div>订单详情</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!--header5-->
+			<div class="header5" id="header5">
+				<div class="container">
+					<a href="https://fun.alipay.com/certificate/jyxkz.htm">ICP证：沪B2-20150087</a>">ICP证：沪B2-20150087</a>
+				</div>
+			</div>
+			<!--header6-->
+			<div class="header6" id="header6">
+				<div class="container">
+					<img src="img/2R3cKfrKqS.png" />
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			var oFfer = document.getElementById("offer");
+			var oHeader3 = document.getElementById("header3");
+			var oMaoyeye = document.getElementById("maoyeye");
+			var oHeader5 = document.getElementById("header5");
+			var oHeader6 = document.getElementById("header6");
+			var oCircletip1 = document.getElementById("circletip1");
+			var oCircletip2 = document.getElementById("circletip2");
+			var oCircletip = document.getElementById("circletip");
+			var off = true;
+			oCircletip.onclick = function() {
+				if(off) {
+					oCircletip1.style.zIndex = "2";
+					oCircletip2.style.zIndex = "1";
+					off = false;
+				} else {
+					oCircletip1.style.zIndex = "1";
+					oCircletip2.style.zIndex = "2";
+					off = true;
+				}
+
+			};
+
+			oFfer.onclick = function() {
+				if(off) {
+					oHeader3.style.height = "360px";
+					oHeader3.style.zIndex = "100";
+					oMaoyeye.style.paddingTop = "160px";
+					oHeader5.style.top = "950px";
+					oHeader6.style.top = "1000px";
+					this.style.top = "0px";
+					off = false;
+				} else {
+					oHeader3.style.height = "81px";
+					oHeader3.style.zIndex = "1";
+					oMaoyeye.style.paddingTop = "30px";
+					oHeader5.style.top = "800px";
+					oHeader6.style.top = "900px";
+					this.style.top = "-22px";
+					off = true;
+				}
+			}
+		}
+	</script>
+
+</html>

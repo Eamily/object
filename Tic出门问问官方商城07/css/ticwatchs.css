@@ -1,0 +1,143 @@
+@charset "utf-8";
+.banner {
+	width: 100%;
+	height: 668px;
+	background: url(../img/s-banner.jpg)no-repeat center top;
+	max-width: 2880px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.space {
+	width: 100%;
+	background-color: #f5f6f8;
+	padding: 45px 0;
+	text-align: center;
+	/* height: 615.6px;*/
+}
+
+.se-name {
+	font-size: 20px;
+	color: #0e0100;
+	margin: 29px 0 10px;
+}
+
+.se-func {
+	font-size: 14px;
+	color: #b8b9c0;
+}
+
+.se-price {
+	font-size: 20px;
+	color: red;
+	padding: 22px 0 60px;
+}
+
+/*.se-price span {
+	font-size: 14px;
+}*/
+
+.container_li {
+	background-color: #fff;
+	width: 338px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.bannertwo {
+	height: 693px;
+	background: url(../img/sport-se.jpg) no-repeat center top;
+}
+
+.bannertwo_box {
+	height: 583px;
+	position: relative;
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.sport-pro {
+	position: absolute;
+	height: 140px;
+	top: 50%;
+	left: 104px;
+	margin-top: -70px;
+}
+
+.title-txt {
+	font-size: 30px;
+	color: rgba(49, 49, 49, 0.9);
+	letter-spacing: 3px;
+}
+
+.sport .title-pro {
+	margin-top: 20px;
+	line-height: 32px;
+}
+
+.title-pro {
+	font-size: 16px;
+	color: #313131;
+	line-height: 38px;
+	letter-spacing: 3px;
+	padding-top: 24px;
+}
+
+.bannerthree {
+	width: 100%;
+	height: 600px;
+	background: #313131;
+}
+
+.bg1 {
+	height: 600px;
+	background: url(../img/110.jpg) no-repeat center top;
+	position: relative;
+}
+
+.bg2 {
+	height: 600px;
+	background: url(../img/111.jpg) no-repeat center top;
+	position: relative;
+}
+
+.bg3 {
+	height: 600px;
+	background: url(../img/112.jpg) no-repeat center top;
+	position: relative;
+}
+
+.video-s {
+	height: 573px;
+	background: url(../img/ticwatchs-video-bg.jpg) repeat-x center top;
+	text-align: center;
+	padding-top: 40px;
+	position: relative;
+}
+
+.start {}
+
+.video {
+	position: absolute;
+	left: 242px;
+	top: 40px;
+}
+
+.stop {
+	/*width: 30px;
+	height: 30px;
+	background: #000;
+	border-radius: 15px;
+	text-align: center;
+	margin-top: 5px;
+	margin-right: 10px
+    position: absolute;
+    right: 0;
+    top: 0;*/
+   position: absolute;
+    right: 258px;
+    top: 48px;
+    display: none;
+
+
+}
